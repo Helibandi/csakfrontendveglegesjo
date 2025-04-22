@@ -1,0 +1,222 @@
+/* Base Styles */
+body {
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+}
+
+/* Register Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Register Card */
+.register-card {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.register-header p {
+  color: var(--dark-gray);
+  font-size: 16px;
+}
+
+/* Form Styles */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+.form-group input {
+  padding: 14px 16px;
+  border: 2px solid var(--medium-gray);
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.2);
+}
+
+.form-group input::placeholder {
+  color: var(--dark-gray);
+}
+
+/* Validation Icons */
+.valid {
+  display: inline-block;
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  display: inline-block;
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.hide {
+  display: none;
+}
+
+.check-icon, .error-icon {
+  font-size: 1rem;
+  vertical-align: middle;
+  margin-left: 0.25rem;
+}
+
+/* Validation Messages */
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions > svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Error Message */
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+/* Layout for name and location fields */
+.name-fields,
+.location-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Register Button */
+.register-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #f5bcc1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+}
+
+.register-button:disabled {
+  background-color: var(--medium-gray);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Login Link */
+.login-link {
+  display: block;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-card {
+    padding: 30px;
+  }
+  
+  .name-fields,
+  .location-fields {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    padding: 20px;
+  }
+  
+  .register-header h1 {
+    font-size: 24px;
+  }
+  
+  .form-group input {
+    padding: 12px 14px;
+  }
+  
+  .register-button {
+    padding: 14px;
+  }
+}

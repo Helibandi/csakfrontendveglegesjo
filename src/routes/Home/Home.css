@@ -1,0 +1,206 @@
+/* Base Styles */
+.home-container {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pizza-wheel-background {
+    flex: 1;
+    background-color: #f59e0b; /* Amber-500 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Loading and Error Screens */
+  .loading-screen,
+  .error-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .error-screen {
+    color: #ef4444; /* Red-500 */
+  }
+  
+  /* White Circle */
+  .white-circle {
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 33%);
+  }
+  
+  /* Pizza Wheel */
+  .pizza-wheel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 33%);
+  }
+  
+  .pizza-wheel-item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+  }
+  
+  .pizza-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Mobile Pizza Grid */
+  .mobile-pizza-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .mobile-pizza-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .mobile-pizza-item.selected {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .mobile-pizza-image {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mobile-pizza-name {
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  /* Pizza Description Panel */
+  .pizza-description-panel {
+    color: black;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 1rem;
+    background-color: rgba(252, 187, 11, 0.7);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+    width: 400px;
+    max-width: 40%;
+  }
+  
+  .pizza-description-panel.mobile {
+    position: static;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: calc(100% - 2rem);
+    max-width: none;
+  }
+  
+  .pizza-description-panel h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pizza-price {
+    margin-top: 0.5rem;
+    color: #b45309; /* Amber-700 */
+    font-weight: 600;
+  }
+  
+  /* Pizza Selection Buttons */
+  .pizza-selection-buttons {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pizza-button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .pizza-button-image {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .pizza-button-image.selected {
+    box-shadow: 0 0 0 2px white;
+    transform: scale(1.1);
+  }
+  
+  .pizza-button:hover .pizza-button-image:not(.selected) {
+    transform: scale(1.05);
+  }
+  
+  .pizza-button-name {
+    margin-left: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1500px) {
+    .white-circle,
+    .pizza-wheel,
+    .pizza-selection-buttons {
+      display: none;
+    }
+  }
