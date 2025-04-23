@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BKwZAYKheNc=",
+  "dgSpecHash": "zEJCL567MbI=",
   "success": true,
-  "projectFilePath": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.csproj",
+  "projectFilePath": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zsuik\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\zsuik\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

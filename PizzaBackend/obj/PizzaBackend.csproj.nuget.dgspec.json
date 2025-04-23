@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.csproj": {}
+    "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {}
   },
   "projects": {
-    "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.csproj": {
+    "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.csproj",
+        "projectUniqueName": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
         "projectName": "PizzaBackend",
-        "projectPath": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.csproj",
+        "projectPath": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
         "packagesPath": "C:\\Users\\zsuik\\.nuget\\packages\\",
-        "outputPath": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\obj\\",
+        "outputPath": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

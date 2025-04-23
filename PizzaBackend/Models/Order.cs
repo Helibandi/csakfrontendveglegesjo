@@ -27,7 +27,7 @@ namespace PizzaBackend.Models
         public enum OrderStatus
         {
             Pending,    
-            Delivered, 
+            Completed, 
             Cancelled  
         }
     }

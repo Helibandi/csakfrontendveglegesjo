@@ -11,8 +11,8 @@ using PizzaBackend.Data;
 namespace PizzaBackend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250414070617_Init")]
-    partial class Init
+    [Migration("20250423140608_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,13 +48,13 @@ namespace PizzaBackend.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "79d9d741-d7e0-41dd-84da-cb8050b5e80e",
+                            Id = "ac2ed7fa-97f7-4817-88bb-8e77f3d4e611",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "0cc2f3b9-81e8-4a83-9474-412d92e70217",
+                            Id = "6f7b80cf-52c4-4bcd-becf-99fff804ad7c",
                             Name = "User",
                             NormalizedName = "USER"
                         });

@@ -4,7 +4,7 @@ SETLOCAL
 echo Adding NuGet source if not exists...
 dotnet nuget list source | find "api.nuget.org" > nul
 if %ERRORLEVEL% neq 0 (
-    dotnet nuget add source http://api.nuget.org/v3/index.json -n nuget.org
+    dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org
 ) else (
     echo NuGet source already exists
 )

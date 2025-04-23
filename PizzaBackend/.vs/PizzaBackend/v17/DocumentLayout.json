@@ -1,260 +1,268 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\",
+  "WorkspaceRootPath": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250423140608_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250423140608_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250423135948_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250423135948_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\run-server.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\run-server.bat||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:run-server.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\userwithroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\userwithroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\userwithroledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\newuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\account\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\account\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\account\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\pizzabackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\pizzabackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:pizzabackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\services\\in development\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\services\\in development\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:services\\in development\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\mappings\\orderitemmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\mappings\\orderitemmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:mappings\\orderitemmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\mappings\\ordermappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\mappings\\ordermappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:mappings\\ordermappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\mappings\\productmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\mappings\\productmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:mappings\\productmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:interfaces\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\product\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\product\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\product\\updateproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\product\\toggleavailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\product\\toggleavailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\product\\toggleavailabilitydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\order\\frontendcartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\order\\frontendcartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\order\\frontendcartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\order\\frontendcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\order\\frontendcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\order\\frontendcartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\order\\adminorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\order\\adminorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\order\\adminorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\order\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\controllers\\in development\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\controllers\\in development\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:controllers\\in development\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\product\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\product\\productdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\product\\productdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\product\\productdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\order\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\order\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\order\\updateorderstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\product\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\product\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\product\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\order\\createorderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\order\\createorderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\order\\createorderrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\in development\\cart\\createcartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\in development\\cart\\createcartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\in development\\cart\\createcartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\in development\\cart\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\in development\\cart\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\in development\\cart\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\in development\\cartitem\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\in development\\cartitem\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\in development\\cartitem\\cartitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\in development\\cartitem\\addproducttocartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\in development\\cartitem\\addproducttocartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\in development\\cartitem\\addproducttocartrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\orderitem\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\orderitem\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\orderitem\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\interfaces\\in development\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\interfaces\\in development\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:interfaces\\in development\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\mappings\\in development\\cartmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\mappings\\in development\\cartmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:mappings\\in development\\cartmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\in development\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\in development\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\in development\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\models\\in development\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\models\\in development\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:models\\in development\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\pizzabackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\pizzabackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:pizzabackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\in development\\cartitem\\createcartitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\in development\\cartitem\\createcartitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\in development\\cartitem\\createcartitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\pb\\rolandosmegoldas\\PizzaBackend\\Migrations\\20250410194909_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\mappings\\in development\\cartitemmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\mappings\\in development\\cartitemmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:mappings\\in development\\cartitemmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\orderitem\\createorderitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\orderitem\\createorderitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\orderitem\\createorderitemrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\dtos\\order\\useriddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\dtos\\order\\useriddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:dtos\\order\\useriddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|f:\\sliceandspice\\pizzafrontend\\pizzabackend\\migrations\\20250414070617_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|c:\\users\\zsuik\\onedrive\\dokumentumok\\projects\\csakfrontendveglegesjo\\pizzabackend\\migrations\\20250414070617_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7EA6DA6B-6E7C-A2D5-DCD5-F16584744B17}|PizzaBackend.csproj|solutionrelative:migrations\\20250414070617_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -265,7 +273,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -273,11 +281,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "20250423140608_init.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250423140608_init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250423140608_init.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250423140608_init.cs",
+              "RelativeToolTip": "Migrations\\20250423140608_init.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wBEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T14:06:08.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250423135948_init.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250423135948_init.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250423135948_init.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250423135948_init.cs",
+              "RelativeToolTip": "Migrations\\20250423135948_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T13:59:48.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Payment.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\Payment.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "Models\\Payment.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\Payment.cs",
               "RelativeToolTip": "Models\\Payment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -285,11 +319,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OrderItem.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "Models\\OrderItem.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\OrderItem.cs",
               "RelativeToolTip": "Models\\OrderItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -297,23 +331,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Order.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Models\\Order.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\Order.cs",
               "RelativeToolTip": "Models\\Order.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswAgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA6wAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T22:43:26.281Z"
+              "WhenOpened": "2025-04-03T22:43:26.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "TokenService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Services\\TokenService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\TokenService.cs",
               "RelativeToolTip": "Services\\TokenService.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAwwFUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -321,11 +356,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "OrderService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "Services\\OrderService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\OrderService.cs",
               "RelativeToolTip": "Services\\OrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -335,9 +370,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "User.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\User.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -346,11 +381,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ProductService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Services\\ProductService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\ProductService.cs",
               "RelativeToolTip": "Services\\ProductService.cs",
               "ViewState": "AgIAAEsAAAAAAAAAAAAmwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -358,11 +393,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "RefreshToken.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\RefreshToken.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\RefreshToken.cs",
               "RelativeDocumentMoniker": "Models\\RefreshToken.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\RefreshToken.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\RefreshToken.cs",
               "RelativeToolTip": "Models\\RefreshToken.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -370,24 +405,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAwwHAAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwGcAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T23:32:18.004Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Product.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\Product.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -395,11 +430,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "run-server.bat",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\run-server.bat",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\run-server.bat",
               "RelativeDocumentMoniker": "run-server.bat",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\run-server.bat",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\run-server.bat",
               "RelativeToolTip": "run-server.bat",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
@@ -407,11 +442,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAIwBQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -419,11 +454,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -431,11 +466,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAANgAAAAAAAAAAAAAAOwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -443,11 +478,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AuthResponseDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\AuthResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\AuthResponseDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\AuthResponseDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\AuthResponseDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\AuthResponseDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\AuthResponseDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -455,11 +490,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -467,11 +502,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\appsettings.json",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -479,11 +514,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "UserUpdateDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserUpdateDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\UserUpdateDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserUpdateDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\UserUpdateDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -491,11 +526,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "UserWithRoleDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserWithRoleDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserWithRoleDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\UserWithRoleDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserWithRoleDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserWithRoleDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\UserWithRoleDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -503,11 +538,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "UserProfileDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserProfileDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserProfileDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\UserProfileDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserProfileDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserProfileDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\UserProfileDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -515,11 +550,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "UserDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\UserDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\UserDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\UserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -527,11 +562,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\RegisterDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\RegisterDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\RegisterDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -539,11 +574,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "RefreshTokenRequestDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\RefreshTokenRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\RefreshTokenRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\RefreshTokenRequestDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\RefreshTokenRequestDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\RefreshTokenRequestDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\RefreshTokenRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -551,11 +586,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "NewUserDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\NewUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\NewUserDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\NewUserDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\NewUserDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\NewUserDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\NewUserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -563,11 +598,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "LoginDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\LoginDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\LoginDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\LoginDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -575,11 +610,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ChangePasswordDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\ChangePasswordDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\ChangePasswordDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Account\\ChangePasswordDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Account\\ChangePasswordDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Account\\ChangePasswordDTO.cs",
               "RelativeToolTip": "DTOs\\Account\\ChangePasswordDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -587,11 +622,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "PizzaBackend.http",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.http",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.http",
               "RelativeDocumentMoniker": "PizzaBackend.http",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.http",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.http",
               "RelativeToolTip": "PizzaBackend.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
@@ -599,11 +634,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "OrderMappers.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\OrderMappers.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\OrderMappers.cs",
               "RelativeDocumentMoniker": "Mappings\\OrderMappers.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\OrderMappers.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\OrderMappers.cs",
               "RelativeToolTip": "Mappings\\OrderMappers.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAwwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -611,11 +646,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "OrderItemMappers.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\OrderItemMappers.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\OrderItemMappers.cs",
               "RelativeDocumentMoniker": "Mappings\\OrderItemMappers.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\OrderItemMappers.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\OrderItemMappers.cs",
               "RelativeToolTip": "Mappings\\OrderItemMappers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -623,11 +658,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "OrderController.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Controllers\\OrderController.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAIwFsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -635,11 +670,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "ProductController.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAcwEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -647,11 +682,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "CartService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\in development\\CartService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\in development\\CartService.cs",
               "RelativeDocumentMoniker": "Services\\in development\\CartService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Services\\in development\\CartService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Services\\in development\\CartService.cs",
               "RelativeToolTip": "Services\\in development\\CartService.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAqwKQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -659,11 +694,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "ProductMappers.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\ProductMappers.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\ProductMappers.cs",
               "RelativeDocumentMoniker": "Mappings\\ProductMappers.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\ProductMappers.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\ProductMappers.cs",
               "RelativeToolTip": "Mappings\\ProductMappers.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAIwFIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -671,11 +706,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "ITokenService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\ITokenService.cs",
               "RelativeDocumentMoniker": "Interfaces\\ITokenService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\ITokenService.cs",
               "RelativeToolTip": "Interfaces\\ITokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -683,11 +718,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "IProductService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\IProductService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IProductService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\IProductService.cs",
               "RelativeToolTip": "Interfaces\\IProductService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -695,11 +730,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "IOrderService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\IOrderService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IOrderService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\IOrderService.cs",
               "RelativeToolTip": "Interfaces\\IOrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -707,11 +742,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "UpdateProductDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\UpdateProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\UpdateProductDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Product\\UpdateProductDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\UpdateProductDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\UpdateProductDTO.cs",
               "RelativeToolTip": "DTOs\\Product\\UpdateProductDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -719,11 +754,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "ToggleAvailabilityDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\ToggleAvailabilityDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\ToggleAvailabilityDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Product\\ToggleAvailabilityDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\ToggleAvailabilityDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\ToggleAvailabilityDTO.cs",
               "RelativeToolTip": "DTOs\\Product\\ToggleAvailabilityDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -731,11 +766,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "FrontendCartItemDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\FrontendCartItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\FrontendCartItemDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Order\\FrontendCartItemDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\FrontendCartItemDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\FrontendCartItemDTO.cs",
               "RelativeToolTip": "DTOs\\Order\\FrontendCartItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -743,11 +778,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "FrontendCartDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\FrontendCartDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\FrontendCartDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Order\\FrontendCartDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\FrontendCartDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\FrontendCartDTO.cs",
               "RelativeToolTip": "DTOs\\Order\\FrontendCartDTO.cs",
               "ViewState": "AgIAAAAAAACgS2gvoV0cwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -755,11 +790,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "AdminOrderDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\AdminOrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\AdminOrderDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Order\\AdminOrderDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\AdminOrderDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\AdminOrderDTO.cs",
               "RelativeToolTip": "DTOs\\Order\\AdminOrderDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -767,11 +802,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "CartController.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\in development\\CartController.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\in development\\CartController.cs",
               "RelativeDocumentMoniker": "Controllers\\in development\\CartController.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Controllers\\in development\\CartController.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Controllers\\in development\\CartController.cs",
               "RelativeToolTip": "Controllers\\in development\\CartController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -779,11 +814,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "OrderDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\OrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\OrderDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Order\\OrderDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\OrderDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\OrderDTO.cs",
               "RelativeToolTip": "DTOs\\Order\\OrderDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -791,11 +826,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "ProductDetailsDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\ProductDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\ProductDetailsDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Product\\ProductDetailsDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\ProductDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\ProductDetailsDTO.cs",
               "RelativeToolTip": "DTOs\\Product\\ProductDetailsDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -803,11 +838,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "UpdateOrderStatusDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\UpdateOrderStatusDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\UpdateOrderStatusDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Order\\UpdateOrderStatusDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\UpdateOrderStatusDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\UpdateOrderStatusDTO.cs",
               "RelativeToolTip": "DTOs\\Order\\UpdateOrderStatusDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -815,11 +850,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "ProductDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\ProductDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Product\\ProductDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\ProductDTO.cs",
               "RelativeToolTip": "DTOs\\Product\\ProductDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -827,11 +862,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "CreateProductDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\CreateProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\CreateProductDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Product\\CreateProductDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Product\\CreateProductDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Product\\CreateProductDTO.cs",
               "RelativeToolTip": "DTOs\\Product\\CreateProductDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -839,11 +874,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "CreateOrderRequestDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\CreateOrderRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\CreateOrderRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Order\\CreateOrderRequestDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\CreateOrderRequestDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\CreateOrderRequestDTO.cs",
               "RelativeToolTip": "DTOs\\Order\\CreateOrderRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -851,11 +886,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "CreateCartRequestDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\Cart\\CreateCartRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\Cart\\CreateCartRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\in development\\Cart\\CreateCartRequestDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\Cart\\CreateCartRequestDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\Cart\\CreateCartRequestDTO.cs",
               "RelativeToolTip": "DTOs\\in development\\Cart\\CreateCartRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -863,11 +898,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "CartDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\Cart\\CartDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\Cart\\CartDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\in development\\Cart\\CartDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\Cart\\CartDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\Cart\\CartDTO.cs",
               "RelativeToolTip": "DTOs\\in development\\Cart\\CartDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -875,11 +910,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "CartItemDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\CartItem\\CartItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\CartItem\\CartItemDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\in development\\CartItem\\CartItemDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\CartItem\\CartItemDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\CartItem\\CartItemDTO.cs",
               "RelativeToolTip": "DTOs\\in development\\CartItem\\CartItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -887,11 +922,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "AddProductToCartRequestDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\CartItem\\AddProductToCartRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\CartItem\\AddProductToCartRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\in development\\CartItem\\AddProductToCartRequestDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\CartItem\\AddProductToCartRequestDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\CartItem\\AddProductToCartRequestDTO.cs",
               "RelativeToolTip": "DTOs\\in development\\CartItem\\AddProductToCartRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -899,11 +934,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "OrderItemDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\OrderItem\\OrderItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\OrderItem\\OrderItemDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\OrderItem\\OrderItemDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\OrderItem\\OrderItemDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\OrderItem\\OrderItemDTO.cs",
               "RelativeToolTip": "DTOs\\OrderItem\\OrderItemDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -911,11 +946,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "ICartService.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\in development\\ICartService.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\in development\\ICartService.cs",
               "RelativeDocumentMoniker": "Interfaces\\in development\\ICartService.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Interfaces\\in development\\ICartService.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Interfaces\\in development\\ICartService.cs",
               "RelativeToolTip": "Interfaces\\in development\\ICartService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -923,11 +958,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "CartMappers.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\in development\\CartMappers.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\in development\\CartMappers.cs",
               "RelativeDocumentMoniker": "Mappings\\in development\\CartMappers.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\in development\\CartMappers.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\in development\\CartMappers.cs",
               "RelativeToolTip": "Mappings\\in development\\CartMappers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -935,11 +970,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 57,
               "Title": "CartItem.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\in development\\CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\in development\\CartItem.cs",
               "RelativeDocumentMoniker": "Models\\in development\\CartItem.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\in development\\CartItem.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\in development\\CartItem.cs",
               "RelativeToolTip": "Models\\in development\\CartItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -947,11 +982,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 58,
               "Title": "Cart.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\in development\\Cart.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\in development\\Cart.cs",
               "RelativeDocumentMoniker": "Models\\in development\\Cart.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Models\\in development\\Cart.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Models\\in development\\Cart.cs",
               "RelativeToolTip": "Models\\in development\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -959,11 +994,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 65,
               "Title": "20250414070617_Init.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Migrations\\20250414070617_Init.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250414070617_Init.cs",
               "RelativeDocumentMoniker": "Migrations\\20250414070617_Init.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Migrations\\20250414070617_Init.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Migrations\\20250414070617_Init.cs",
               "RelativeToolTip": "Migrations\\20250414070617_Init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -971,11 +1006,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 59,
               "Title": "PizzaBackend.csproj",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.csproj",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
               "RelativeDocumentMoniker": "PizzaBackend.csproj",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\PizzaBackend.csproj",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
               "RelativeToolTip": "PizzaBackend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -983,11 +1018,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 60,
               "Title": "CreateCartItemRequestDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\CartItem\\CreateCartItemRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\CartItem\\CreateCartItemRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\in development\\CartItem\\CreateCartItemRequestDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\in development\\CartItem\\CreateCartItemRequestDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\in development\\CartItem\\CreateCartItemRequestDTO.cs",
               "RelativeToolTip": "DTOs\\in development\\CartItem\\CreateCartItemRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -995,23 +1030,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 61,
               "Title": "20250410194909_Init.cs",
               "DocumentMoniker": "F:\\pb\\rolandosmegoldas\\PizzaBackend\\Migrations\\20250410194909_Init.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\pb\\rolandosmegoldas\\PizzaBackend\\Migrations\\20250410194909_Init.cs",
               "ToolTip": "F:\\pb\\rolandosmegoldas\\PizzaBackend\\Migrations\\20250410194909_Init.cs",
-              "RelativeToolTip": "..\\..\\..\\pb\\rolandosmegoldas\\PizzaBackend\\Migrations\\20250410194909_Init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T19:49:10.206Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 63,
               "Title": "CreateOrderItemRequestDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\OrderItem\\CreateOrderItemRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\OrderItem\\CreateOrderItemRequestDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\OrderItem\\CreateOrderItemRequestDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\OrderItem\\CreateOrderItemRequestDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\OrderItem\\CreateOrderItemRequestDTO.cs",
               "RelativeToolTip": "DTOs\\OrderItem\\CreateOrderItemRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1019,11 +1052,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 62,
               "Title": "CartItemMappers.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\in development\\CartItemMappers.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\in development\\CartItemMappers.cs",
               "RelativeDocumentMoniker": "Mappings\\in development\\CartItemMappers.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\Mappings\\in development\\CartItemMappers.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\Mappings\\in development\\CartItemMappers.cs",
               "RelativeToolTip": "Mappings\\in development\\CartItemMappers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -1031,11 +1064,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 64,
               "Title": "UserIdDTO.cs",
-              "DocumentMoniker": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\UserIdDTO.cs",
+              "DocumentMoniker": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\UserIdDTO.cs",
               "RelativeDocumentMoniker": "DTOs\\Order\\UserIdDTO.cs",
-              "ToolTip": "F:\\sliceandspice\\PizzaFrontend\\PizzaBackend\\DTOs\\Order\\UserIdDTO.cs",
+              "ToolTip": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\DTOs\\Order\\UserIdDTO.cs",
               "RelativeToolTip": "DTOs\\Order\\UserIdDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

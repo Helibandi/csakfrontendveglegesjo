@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace PizzaBackend.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -334,8 +334,8 @@ namespace PizzaBackend.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "0cc2f3b9-81e8-4a83-9474-412d92e70217", null, "User", "USER" },
-                    { "79d9d741-d7e0-41dd-84da-cb8050b5e80e", null, "Admin", "ADMIN" }
+                    { "6f7b80cf-52c4-4bcd-becf-99fff804ad7c", null, "User", "USER" },
+                    { "ac2ed7fa-97f7-4817-88bb-8e77f3d4e611", null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
