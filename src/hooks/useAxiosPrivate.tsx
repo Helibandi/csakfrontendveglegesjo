@@ -30,13 +30,31 @@ const useAxiosPrivate = () => {
           sent?: boolean;
         };
 
-        if (error?.response?.status === 401 && !prevRequest?.sent) {
+        // Check if error is due to expired token (401 status) or contains specific error message
+        const isExpiredToken =
+          error?.response?.status === 401 ||
+          (error?.response?.data as any)?.message
+            ?.toLowerCase()
+            ?.includes("expired");
+
+        if (isExpiredToken && !prevRequest?.sent) {
+          console.log("Token appears to be expired, attempting refresh");
           prevRequest.sent = true;
-          const newAccessToken = await refresh();
-          if (prevRequest.headers) {
-            prevRequest.headers["Authorization"] = `Bearer ${newAccessToken}`;
+
+          try {
+            const newAccessToken = await refresh();
+            if (prevRequest.headers) {
+              prevRequest.headers["Authorization"] = `Bearer ${newAccessToken}`;
+            }
+            return axiosPrivate(prevRequest);
+          } catch (refreshError) {
+            console.error(
+              "Failed to refresh token during request:",
+              refreshError
+            );
+            // Possibly redirect to login here
+            throw error;
           }
-          return axiosPrivate(prevRequest);
         }
 
         return Promise.reject(error);

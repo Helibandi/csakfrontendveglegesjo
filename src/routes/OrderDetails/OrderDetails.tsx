@@ -120,7 +120,7 @@ const OrderDetails = () => {
     (sum, item) => sum + item.totalPrice,
     0
   );
-  const deliveryFee = 1500;
+  const deliveryFee = 0; // Changed from 1500 to make delivery free
   const total = subtotal + deliveryFee;
 
   return (
@@ -173,7 +173,7 @@ const OrderDetails = () => {
               </div>
               <div className="total-row">
                 <span>Delivery Fee</span>
-                <span>${deliveryFee.toFixed(0)}</span>
+                <span>Free</span>
               </div>
               <div className="total-row grand-total">
                 <span>Total</span>
