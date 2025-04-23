@@ -124,6 +124,12 @@ body {
   margin-right: 0.25rem;
 }
 
+.instructions.error {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
+}
+
 .offscreen {
   position: absolute;
   left: -9999px;
@@ -219,4 +225,12 @@ body {
   .register-button {
     padding: 14px;
   }
+}
+
+/* Additional Styles */
+.checking {
+  margin-left: 0.5rem;
+  color: #666;
+  font-size: 0.8rem;
+  font-style: italic;
 }
