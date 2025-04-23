@@ -1,273 +1,215 @@
-import React, { use, useEffect, useState } from 'react';
-import './AdminDashboard.css'; // We'll create this CSS file
-import { useNavigate } from 'react-router-dom';
-import { BASE_URL } from '../../utils/backend-conf';
-import { AllOrders, Product } from '../../utils/types';
-import { Orders } from '../../utils/types';
-import { OrderItem } from '../../utils/types';
+import React, { useEffect, useState } from "react";
+import "./AdminDashboard.css"; // We'll create this CSS file
+import { useNavigate } from "react-router-dom";
+import { BASE_URL } from "../../utils/backend-conf";
+import { AllOrders, Product } from "../../utils/types";
+import { Orders } from "../../utils/types";
 //import { useAuth } from '../../context/AuthContext';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import useAxiosPrivate from '../../hooks/useAxiosPrivate';
-import axios from 'axios';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import useAxiosPrivate from "../../hooks/useAxiosPrivate";
 
 const AdminDashboard = () => {
- // const { refreshToken } = useAuth();
-  const [activeTab, setActiveTab] = useState('products');
+  // const { refreshToken } = useAuth();
+  const [activeTab, setActiveTab] = useState("products");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [currentProduct, setCurrentProduct] = useState<Product | null>(null);
   const [orders, setOrders] = useState<AllOrders[]>([]);
   const [products, setProducts] = useState<Product[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
   const navigate = useNavigate();
   const axiosPrivate = useAxiosPrivate();
 
+  const notify = () =>
+    toast.success("The product was successfully updated!", { autoClose: 4000 });
 
-  const notify = () => toast.success('The product was successfully updated!', { autoClose: 4000 });
+  useEffect(() => {
+    const fetchOrders = async () => {
+      try {
+        setLoading(true);
 
-    useEffect(() => {
-        const fetchOrders = async () => {
-          try {
-            setLoading(true);
-            
-            // Use axiosPrivate instead of fetch for consistency
-            const response = await axiosPrivate.get(`${BASE_URL}/api/Orders/all-orders`);
-            
-            setOrders(response.data);
-          } catch (err) {
-            console.error('Fetch error:', err);
-          } finally {
-            setLoading(false);
-          }
-        }
-        fetchOrders();
-      }, []);
+        // Use axiosPrivate instead of fetch for consistency
+        const response = await axiosPrivate.get(
+          `${BASE_URL}/api/Orders/all-orders`
+        );
 
+        // Process orders to ensure consistent data structure for all orders
+        const processedOrders = response.data.map((order: AllOrders) => ({
+          id: order.id,
+          fullUserName: order.fullUserName || "Unknown Customer",
+          userEmail: order.userEmail || "",
+          userId: order.userId || "",
+          deliveryAddress: order.deliveryAddress || "",
+          orderDate: order.orderDate || new Date().toISOString(),
+          orderItems: Array.isArray(order.orderItems)
+            ? order.orderItems.map((item) => ({
+                id: item.id,
+                price: item.price || 0,
+                product: item.product
+                  ? {
+                      category: item.product.category || "",
+                      description: item.product.description || "",
+                      id: item.product.id || "",
+                      imageUrl: item.product.imageUrl || "",
+                      isAvailable:
+                        typeof item.product.isAvailable === "boolean"
+                          ? item.product.isAvailable
+                          : true,
+                      name: item.product.name || "Unknown Product",
+                      price: item.product.price || 0,
+                    }
+                  : {
+                      category: "",
+                      description: "",
+                      id: "",
+                      imageUrl: "",
+                      isAvailable: true,
+                      name: "Unknown Product",
+                      price: 0,
+                    },
+                productId: item.productId || "",
+                quantity: item.quantity || 1,
+                totalPrice: item.totalPrice || item.price || 0,
+              }))
+            : [],
+          status: order.status || "Pending",
+          totalAmount: order.totalAmount || 0,
+        }));
 
+        setOrders(processedOrders);
+      } catch (err) {
+        console.error("Fetch error:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchOrders();
+  }, []);
 
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        setLoading(true);
 
+        // Use axiosPrivate instead of fetch for consistency
+        const response = await axiosPrivate.get(`${BASE_URL}/api/Products`);
 
+        setProducts(response.data);
+      } catch (err) {
+        console.error("Fetch error:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchProducts();
+  }, []);
 
+  const mappedProducts = products.map((product) => ({
+    id: product.id,
+    name: product.name,
+    description: product.description,
+    imageUrl: product.imageUrl,
+    price: product.price,
+    isAvailable: product.isAvailable,
+    category: product.category,
+  }));
 
+  const handleEditProduct = (product: Product) => {
+    setCurrentProduct(product);
+    setIsDialogOpen(true);
+  };
 
+  // This should replace your current handleSaveProduct
+  const handleSaveProduct = async (product: Product) => {
+    try {
+      // Determine if we're updating or creating
+      const isUpdate = !!product.id;
+      const url = isUpdate
+        ? `${BASE_URL}/api/Products/${product.id}`
+        : `${BASE_URL}/api/Products`;
 
+      let response;
 
-      useEffect(() => {
-        const fetchProducts = async () => {
-          try {
-            setLoading(true);
-            
-            // Use axiosPrivate instead of fetch for consistency
-            const response = await axiosPrivate.get(`${BASE_URL}/api/Products`);
-            
-            setProducts(response.data);
-          } catch (err) {
-            console.error('Fetch error:', err);
-          } finally {
-            setLoading(false);
-          }
-        }
-        fetchProducts();
-      }, []);
+      if (isUpdate) {
+        response = await axiosPrivate.put(url, product);
+      } else {
+        response = await axiosPrivate.post(url, product);
+      }
 
+      // Handle successful update
+      if (isUpdate) {
+        // For PUT operations that return 204 No Content
+        notify();
+        setProducts(products.map((p) => (p.id === product.id ? product : p)));
+      } else {
+        // For POST operations that return the new product
+        console.log("Product saved:", response.data);
+        setProducts([...products, response.data]);
+      }
 
-
-
-
-
-
-
-
-      const mappedOrders = orders.map(order => ({
-        id: order.id,
-        deliveryAddress: order.deliveryAddress,
-        orderDate: order.orderDate,
-        orderItems: order.orderItems.map(item => ({
-          id: item.id,
-          price: item.price,
-          product: {
-            category: item.product.category,
-            description: item.product.description,
-            id: item.product.id,
-            imageUrl: item.product.imageUrl,
-            isAvailable: item.product.isAvailable,
-            name: item.product.name,
-            price: item.product.price
-          },
-          productId: item.productId,
-          quantity: item.quantity,
-          totalPrice: item.totalPrice
-        })),
-        status: order.status,
-        totalAmount: order.totalAmount
-      }));
-
-
-
-
-
-
-
-
-      const mappedProducts = products.map(product => ({
-        id: product.id,
-        name: product.name,
-        description: product.description,
-        imageUrl: product.imageUrl,
-        price: product.price,
-        isAvailable: product.isAvailable,
-        category: product.category
-      }));
-
-
-
-      const handleEditProduct = (product: Product) => {
-        setCurrentProduct(product);
-        setIsDialogOpen(true);
-      };
-      
-      // This should replace your current handleSaveProduct
-      const handleSaveProduct = async (product: Product) => {
-        try {
-          // Determine if we're updating or creating
-          const isUpdate = !!product.id;
-          const url = isUpdate 
-            ? `${BASE_URL}/api/Products/${product.id}`
-            : `${BASE_URL}/api/Products`;
-          
-          let response;
-          
-          if (isUpdate) {
-            response = await axiosPrivate.put(url, product);
-          } else {
-            response = await axiosPrivate.post(url, product);
-          }
-          
-          // Handle successful update
-          if (isUpdate) {
-            // For PUT operations that return 204 No Content
-            notify();
-            setProducts(products.map(p => 
-              p.id === product.id ? product : p
-            ));
-          } else {
-            // For POST operations that return the new product
-            console.log('Product saved:', response.data);
-            setProducts([...products, response.data]);
-          }
-          
-          setIsDialogOpen(false);
-        } catch (err) {
-          console.error('Save error:', err);
-        }
-      };
-
-
-
+      setIsDialogOpen(false);
+    } catch (err) {
+      console.error("Save error:", err);
+    }
+  };
 
   const handleAddProduct = () => {
     setCurrentProduct(null);
     setIsDialogOpen(true);
   };
 
-
-
-
-
-
   const toggleProductStatus = async (productId: number) => {
-    const productToUpdate = products.find(product => parseInt(product.id) === productId);
+    const productToUpdate = products.find(
+      (product) => parseInt(product.id) === productId
+    );
     if (!productToUpdate) return;
     const newAvailability = !productToUpdate.isAvailable;
-    
-    setProducts(products.map(product =>
-      parseInt(product.id) === productId
-        ? { ...product, isAvailable: newAvailability }
-        : product
-    ));
-  
+
+    setProducts(
+      products.map((product) =>
+        parseInt(product.id) === productId
+          ? { ...product, isAvailable: newAvailability }
+          : product
+      )
+    );
+
     try {
       // Use axiosPrivate instead of fetch with manual token handling
-      await axiosPrivate.put(`${BASE_URL}/api/Products/${productId}/availability`, {
-        isAvailable: newAvailability,
-      });
+      await axiosPrivate.put(
+        `${BASE_URL}/api/Products/${productId}/availability`,
+        {
+          isAvailable: newAvailability,
+        }
+      );
     } catch (error) {
-      console.error('Error updating product availability:', error);
+      console.error("Error updating product availability:", error);
       // Revert the local state change if the API call fails
       setProducts(products);
     }
   };
-  
 
-
-
-
-
-
-
-
-
-  const updateOrderStatus = async (orderId: number, newStatus: Orders['status']) => {
-    setOrders(orders.map(order =>
-      order.id === orderId ? { ...order, status: newStatus } : order
-    ));
+  const updateOrderStatus = async (
+    orderId: number,
+    newStatus: Orders["status"]
+  ) => {
+    setOrders(
+      orders.map((order) =>
+        order.id === orderId ? { ...order, status: newStatus } : order
+      )
+    );
 
     try {
-      const response = await axiosPrivate.patch(`${BASE_URL}/api/Orders/${orderId}/status`, {
-        status: newStatus
-      });
-      console.log('Order status updated:', response.data);
-
-    } catch (error) {
-      console.error('Error updating order status:', error);
-
-    }
-
-
-
-      {/*
-
-
-
-
-
-      const accesstoken = localStorage.getItem('accessToken'); 
-        const response = await fetch(`${BASE_URL}/api/Orders/${orderId}/status`, {
-          method: 'PATCH',
-          headers: {
-              'Authorization': `Bearer ${accesstoken}`,
-              'Content-Type': 'application/json'
-            },
-          body: JSON.stringify({
-            status: newStatus
-          }),
-        });
-    
-        if (!response.ok) {
-          throw new Error('Backend update failed');
+      const response = await axiosPrivate.patch(
+        `${BASE_URL}/api/Orders/${orderId}/status`,
+        {
+          status: newStatus,
         }
-      } catch (error) {
-        console.error('Hiba történt a frissítés során:', error);
-      }
-
-    */}
-
-
-
-
+      );
+      console.log("Order status updated:", response.data);
+    } catch (error) {
+      console.error("Error updating order status:", error);
+    }
   };
-
-
-
-
-
-
-
-
-
-
-
-
 
   return (
     <div className="admin-dashboard">
@@ -277,21 +219,21 @@ const AdminDashboard = () => {
       </header>
 
       <div className="admin-tabs">
-        <button 
-          className={`tab-btn ${activeTab === 'products' ? 'active' : ''}`}
-          onClick={() => setActiveTab('products')}
+        <button
+          className={`tab-btn ${activeTab === "products" ? "active" : ""}`}
+          onClick={() => setActiveTab("products")}
         >
           Products
         </button>
-        <button 
-          className={`tab-btn ${activeTab === 'orders' ? 'active' : ''}`}
-          onClick={() => setActiveTab('orders')}
+        <button
+          className={`tab-btn ${activeTab === "orders" ? "active" : ""}`}
+          onClick={() => setActiveTab("orders")}
         >
           Orders
         </button>
       </div>
 
-      {activeTab === 'products' && (
+      {activeTab === "products" && (
         <div className="products-section">
           <div className="section-header">
             <h2>Manage Products</h2>
@@ -299,7 +241,7 @@ const AdminDashboard = () => {
               Add Product
             </button>
           </div>
-          
+
           <div className="products-table">
             <table>
               <thead>
@@ -314,31 +256,33 @@ const AdminDashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {mappedProducts.map(product => (
+                {mappedProducts.map((product) => (
                   <tr key={product.id}>
                     <td>{product.id}</td>
                     <td>
-                      <img 
-                        src={product.imageUrl} 
-                        alt={product.name} 
+                      <img
+                        src={product.imageUrl}
+                        alt={product.name}
                         className="product-img"
                       />
                     </td>
                     <td>{product.name}</td>
                     <td>{product.description}</td>
-                    <td>${product.price.toFixed(2)}</td>
+                    <td>{product.price.toFixed(0)} HUF</td>
                     <td>
                       <label className="switch">
-                        <input 
-                          type="checkbox" 
+                        <input
+                          type="checkbox"
                           checked={product.isAvailable}
-                          onChange={() => toggleProductStatus(parseInt(product.id))}
+                          onChange={() =>
+                            toggleProductStatus(parseInt(product.id))
+                          }
                         />
                         <span className="slider round"></span>
                       </label>
                     </td>
                     <td>
-                      <button 
+                      <button
                         onClick={() => handleEditProduct(product)}
                         className="edit-btn"
                       >
@@ -353,10 +297,10 @@ const AdminDashboard = () => {
         </div>
       )}
 
-      {activeTab === 'orders' && (
+      {activeTab === "orders" && (
         <div className="orders-section">
           <h2>Manage Orders</h2>
-          
+
           <div className="orders-table">
             <table>
               <thead>
@@ -370,19 +314,21 @@ const AdminDashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {orders.map(order => (
+                {orders.map((order) => (
                   <tr key={order.id}>
                     <td>{order.id}</td>
                     <td>{order.fullUserName}</td>
-                    <td>{order.orderDate}</td>
-                    <td>{order.totalAmount.toFixed(0)}</td>
+                    <td>{new Date(order.orderDate).toLocaleDateString()}</td>
+                    <td>{order.totalAmount.toFixed(0)} HUF</td>
                     <td>
                       <select
                         value={order.status}
-                        onChange={(e) => updateOrderStatus(
-                          order.id, 
-                          e.target.value as Orders['status']
-                        )}
+                        onChange={(e) =>
+                          updateOrderStatus(
+                            order.id,
+                            e.target.value as Orders["status"]
+                          )
+                        }
                         className="status-select"
                       >
                         <option value="Pending">Pending</option>
@@ -391,8 +337,15 @@ const AdminDashboard = () => {
                       </select>
                     </td>
                     <td>
-                      <button 
-                        onClick={() => navigate(`/admin/orders/${order.id}`)}
+                      <button
+                        onClick={() => {
+                          // Store current order in sessionStorage before navigating
+                          sessionStorage.setItem(
+                            "currentOrderDetails",
+                            JSON.stringify(order)
+                          );
+                          navigate(`/admin/orders/${order.id}`);
+                        }}
                         className="view-btn"
                       >
                         View
@@ -418,54 +371,60 @@ const AdminDashboard = () => {
 };
 
 // Product Dialog Component
-const ProductDialog = ({ 
-  product, 
-  onClose, 
-  onSave 
+const ProductDialog = ({
+  product,
+  onClose,
+  onSave,
 }: {
   product: Product | null;
   onClose: () => void;
   onSave: (product: Product) => void;
 }) => {
-  const [formData, setFormData] = useState<Product>(product || {
-    id: '',
-    name: '',
-    description: '',
-    price: 0,
-    imageUrl: '',
-    isAvailable: true,
-    category: ''
-  });
-  const [formError, setFormError] = useState('');
+  const [formData, setFormData] = useState<Product>(
+    product || {
+      id: "",
+      name: "",
+      description: "",
+      price: 0,
+      imageUrl: "",
+      isAvailable: true,
+      category: "",
+    }
+  );
+  const [formError, setFormError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >
+  ) => {
     const { name, value, type } = e.target;
     // Handle checkbox separately
-    if (type === 'checkbox') {
+    if (type === "checkbox") {
       const checkbox = e.target as HTMLInputElement;
       setFormData({
         ...formData,
-        [name]: checkbox.checked
+        [name]: checkbox.checked,
       });
-    } else if (type === 'number') {
+    } else if (type === "number") {
       setFormData({
         ...formData,
-        [name]: parseFloat(value)
+        [name]: parseFloat(value),
       });
     } else {
       setFormData({
         ...formData,
-        [name]: value
+        [name]: value,
       });
     }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate form
     if (!formData.name || !formData.description || formData.price <= 0) {
-      setFormError('Please fill in all required fields correctly');
+      setFormError("Please fill in all required fields correctly");
       return;
     }
 
@@ -474,27 +433,27 @@ const ProductDialog = ({
       // Clear form after successful save
       if (!product) {
         setFormData({
-          id: '',
-          name: '',
-          description: '',
+          id: "",
+          name: "",
+          description: "",
           price: 0,
-          imageUrl: '',
+          imageUrl: "",
           isAvailable: true,
-          category: ''
+          category: "",
         });
       }
-      setFormError('');
+      setFormError("");
     } catch (error) {
-      console.error('Error saving product:', error);
-      setFormError('Failed to save product. Please try again.');
+      console.error("Error saving product:", error);
+      setFormError("Failed to save product. Please try again.");
     }
   };
 
   return (
     <div className="dialog-overlay">
       <div className="product-dialog">
-        <h2>{product ? 'Edit Product' : 'Add New Product'}</h2>
-        
+        <h2>{product ? "Edit Product" : "Add New Product"}</h2>
+
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Name</label>
@@ -506,7 +465,7 @@ const ProductDialog = ({
               required
             />
           </div>
-          
+
           <div className="form-group">
             <label>Description</label>
             <textarea
@@ -516,7 +475,7 @@ const ProductDialog = ({
               required
             />
           </div>
-          
+
           <div className="form-group">
             <label>Price</label>
             <input
@@ -525,7 +484,7 @@ const ProductDialog = ({
               value={formData.price}
               onChange={handleChange}
               min="0"
-              step="50"
+              step="1"
               required
             />
           </div>
@@ -543,7 +502,7 @@ const ProductDialog = ({
               <option value="Drink">Drink</option>
             </select>
           </div>
-          
+
           <div className="form-group">
             <label>Image URL</label>
             <input
@@ -554,7 +513,7 @@ const ProductDialog = ({
               required
             />
           </div>
-          
+
           <div className="form-group checkbox-group">
             <label>
               <input
@@ -566,9 +525,9 @@ const ProductDialog = ({
               Available
             </label>
           </div>
-          
+
           {formError && <p className="error">{formError}</p>}
-          
+
           <div className="dialog-actions">
             <button type="button" onClick={onClose} className="cancel-btn">
               Cancel

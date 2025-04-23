@@ -18,8 +18,24 @@ const OrderDetails = () => {
     const fetchOrderDetails = async () => {
       try {
         setLoading(true);
-        //const accesstoken = localStorage.getItem('accessToken');
 
+        // First check if we have order details in sessionStorage
+        const storedOrderData = sessionStorage.getItem("currentOrderDetails");
+
+        if (storedOrderData) {
+          console.log("Using stored order data from session");
+          const parsedOrder = JSON.parse(storedOrderData);
+
+          // Only use stored data if it matches the requested order ID
+          if (parsedOrder && parsedOrder.id.toString() === id) {
+            setOrder(parsedOrder);
+            setLoading(false);
+            return;
+          }
+        }
+
+        // If no stored data or ID doesn't match, fetch from API
+        console.log("Fetching order data from API");
         const response = await fetch(`${BASE_URL}/api/Orders/${id}`, {
           method: "GET",
           headers: {
@@ -28,9 +44,63 @@ const OrderDetails = () => {
           },
         });
 
+        if (!response.ok) {
+          throw new Error(
+            `Failed to load order details (Status: ${response.status})`
+          );
+        }
+
         const data = await response.json();
-        console.log("Fetched order details:", data); // Debugging line
-        setOrder(data);
+
+        // Process data to ensure all required fields exist
+        const processedOrder = {
+          id: data.id || 0,
+          orderDate: data.orderDate || new Date().toISOString(),
+          totalAmount: data.totalAmount || 0,
+          status: data.status || "Pending",
+          deliveryAddress: data.deliveryAddress || "",
+          // Ensure orderItems exists and has required structure
+          orderItems: Array.isArray(data.orderItems)
+            ? data.orderItems.map((item: any) => ({
+                id: item.id || 0,
+                productId: item.productId || "",
+                product: item.product
+                  ? {
+                      id: item.product.id || "",
+                      name: item.product.name || "Unknown Product",
+                      description: item.product.description || "",
+                      price: item.product.price || 0,
+                      imageUrl:
+                        item.product.imageUrl || "/pizza-placeholder.jpg",
+                      isAvailable:
+                        typeof item.product.isAvailable === "boolean"
+                          ? item.product.isAvailable
+                          : true,
+                      category: item.product.category || "",
+                    }
+                  : {
+                      id: "",
+                      name: "Unknown Product",
+                      description: "",
+                      price: 0,
+                      imageUrl: "/pizza-placeholder.jpg",
+                      isAvailable: true,
+                      category: item.category || "",
+                    },
+                quantity: item.quantity || 0,
+                price: item.price || 0,
+                totalPrice: item.totalPrice || 0,
+              }))
+            : [],
+        };
+
+        // Store this processed order in sessionStorage for future use
+        sessionStorage.setItem(
+          "currentOrderDetails",
+          JSON.stringify(processedOrder)
+        );
+
+        setOrder(processedOrder);
       } catch (err) {
         console.error("Fetch error:", err);
         setError(
@@ -42,14 +112,13 @@ const OrderDetails = () => {
     };
 
     fetchOrderDetails();
-  }, [id]);
+  }, [id, auth.accessToken]);
 
   const updateOrderStatus = async (newStatus: Orders["status"]) => {
     if (!order) return;
 
     try {
       setStatusUpdating(true);
-      //const accesstoken = localStorage.getItem("accessToken");
 
       const response = await fetch(`${BASE_URL}/api/Orders/${id}/status`, {
         method: "PATCH",
@@ -76,14 +145,23 @@ const OrderDetails = () => {
     }
   };
 
-  // Parse the delivery address (assuming it's stored as a JSON string)
+  // Parse the delivery address safely
   let deliveryAddress = order?.deliveryAddress || "";
   try {
-    const addressObj = JSON.parse(deliveryAddress);
-    if (addressObj && typeof addressObj === "object") {
-      deliveryAddress = `${addressObj.fullName}, ${addressObj.address}, ${addressObj.city}, ${addressObj.zipCode}`;
+    if (
+      deliveryAddress &&
+      typeof deliveryAddress === "string" &&
+      deliveryAddress.includes("{")
+    ) {
+      const addressObj = JSON.parse(deliveryAddress);
+      if (addressObj && typeof addressObj === "object") {
+        deliveryAddress = `${addressObj.fullName || ""}, ${
+          addressObj.address || ""
+        }, ${addressObj.city || ""}, ${addressObj.zipCode || ""}`;
+      }
     }
   } catch (e) {
+    console.warn("Failed to parse delivery address:", e);
     // Use the address as-is if it's not valid JSON
   }
 
@@ -115,12 +193,14 @@ const OrderDetails = () => {
     );
   }
 
-  // Calculate order totals
-  const subtotal = order.orderItems.reduce(
-    (sum, item) => sum + item.totalPrice,
-    0
-  );
-  const deliveryFee = 0; // Changed from 1500 to make delivery free
+  // Calculate order totals with fallbacks
+  const subtotal =
+    order?.orderItems?.reduce(
+      (sum, item) => sum + (item?.totalPrice || 0),
+      0
+    ) || 0;
+
+  const deliveryFee = 0; // Free delivery
   const total = subtotal + deliveryFee;
 
   return (

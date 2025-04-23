@@ -1,112 +1,159 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import './Home.css';
-
-
-const dummyPizzas = [
-  {
-    pizzaId: 1,
-    name: 'Margherita',
-    description: 'Classic tomato sauce, mozzarella, and basil',
-    price: 1990,
-    imageUrl: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  },
-  {
-    pizzaId: 2,
-    name: 'Pepperoni',
-    description: 'Tomato sauce, mozzarella, and spicy pepperoni',
-    price: 2290,
-    imageUrl: 'https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  },
-  {
-    pizzaId: 3,
-    name: 'Vegetarian',
-    description: 'Tomato sauce, mozzarella, bell peppers, mushrooms, and olives',
-    price: 2190,
-    imageUrl: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  },
-  {
-    pizzaId: 4,
-    name: 'Hawaiian',
-    description: 'Tomato sauce, mozzarella, ham, and pineapple',
-    price: 2390,
-    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  },
-  {
-    pizzaId: 5,
-    name: 'BBQ Chicken',
-    description: 'BBQ sauce, mozzarella, chicken, and red onions',
-    price: 2490,
-    imageUrl: 'https://images.unsplash.com/photo-1552539618-7eec9b4d1796?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  },
-  {
-    pizzaId: 6,
-    name: 'Vegetarian',
-    description: 'Tomato sauce, mozzarella, bell peppers, mushrooms, and olives',
-    price: 2190,
-    imageUrl: 'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  },
-  {
-    pizzaId: 7,
-    name: 'Hawaiian',
-    description: 'Tomato sauce, mozzarella, ham, and pineapple',
-    price: 2390,
-    imageUrl: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  },
-  {
-    pizzaId: 8,
-    name: 'BBQ Chicken',
-    description: 'BBQ sauce, mozzarella, chicken, and red onions',
-    price: 2490,
-    imageUrl: 'https://images.unsplash.com/photo-1552539618-7eec9b4d1796?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-  }
- 
-];
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import "./Home.css";
+import { BASE_URL } from "../../utils/backend-conf";
+import { Product } from "../../utils/types";
 
 const Home = () => {
   const [rotateDeg, setRotateDeg] = useState(-75);
-  const [selectedText, setSelectedText] = useState('');
-  const [selectedImage, setSelectedImage] = useState(null);
-  const [selectedPizza, setSelectedPizza] = useState(null);
+  const [selectedText, setSelectedText] = useState("");
+  const [selectedImage, setSelectedImage] = useState("");
+  const [selectedPizza, setSelectedPizza] = useState<Product | null>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [pizzas, setPizzas] = useState<Product[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  // Fetch pizzas from the database
+  useEffect(() => {
+    const fetchPizzas = async () => {
+      try {
+        setIsLoading(true);
+
+        // Define the IDs we want to fetch (10-17)
+        const targetIds = [10, 11, 12, 13, 14, 15, 16, 17];
+
+        // Create promises for all the specific product requests
+        const productPromises = targetIds.map(
+          (id) =>
+            fetch(`${BASE_URL}/api/products/${id}`)
+              .then((res) => (res.ok ? res.json() : null))
+              .catch(() => null) // Return null for any products that fail to fetch
+        );
+
+        // Wait for all requests to complete
+        const results = await Promise.all(productPromises);
+
+        // Filter out null results (products that couldn't be fetched)
+        const selectedPizzas = results.filter((product) => product !== null);
+
+        // If we don't have enough specific products, fetch some extras
+        if (selectedPizzas.length < 8) {
+          // Fallback - get any available pizzas
+          const backupResponse = await fetch(`${BASE_URL}/api/products`);
+
+          if (backupResponse.ok) {
+            const allProducts = await backupResponse.json();
+            const pizzaProducts = allProducts.filter(
+              (product: Product) =>
+                product.category === "Pizza" &&
+                // Exclude products we already have
+                !selectedPizzas.some((p) => p.id === product.id)
+            );
+
+            // Add additional pizzas to reach 8 total (if possible)
+            const additionalPizzasNeeded = 8 - selectedPizzas.length;
+            const additionalPizzas = pizzaProducts.slice(
+              0,
+              additionalPizzasNeeded
+            );
+
+            // Combine specific products with additional products
+            selectedPizzas.push(...additionalPizzas);
+          }
+        }
+
+        // If we don't have any pizzas at all, display an error
+        if (selectedPizzas.length === 0) {
+          throw new Error("No pizzas found in the database");
+        }
+
+        // Format the data to match the expected structure
+        const formattedPizzas = selectedPizzas.map((pizza: Product) => ({
+          ...pizza,
+          pizzaId: parseInt(pizza.id), // Add pizzaId property expected by the component
+        }));
+
+        setPizzas(formattedPizzas);
+        setIsLoading(false);
+      } catch (error) {
+        console.error("Error fetching pizzas:", error);
+        setError(
+          error instanceof Error ? error.message : "Failed to load pizzas"
+        );
+        setIsLoading(false);
+      }
+    };
+
+    fetchPizzas();
+  }, []);
 
   // Check if device is mobile on component mount and window resize
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 1500);
     };
-    
+
     checkIsMobile();
-    
-    window.addEventListener('resize', checkIsMobile);
-    
-    return () => window.removeEventListener('resize', checkIsMobile);
+
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => window.removeEventListener("resize", checkIsMobile);
   }, []);
 
   // Set default pizza if none selected
   useEffect(() => {
-    if (!selectedPizza && dummyPizzas.length > 0 && !selectedText) {
-      setSelectedPizza(dummyPizzas[0]);
-      setSelectedText(dummyPizzas[0].description);
-      setSelectedImage(dummyPizzas[0].imageUrl);
+    if (!selectedPizza && pizzas.length > 0 && !selectedText) {
+      setSelectedPizza(pizzas[0]);
+      setSelectedText(pizzas[0].description || "");
+      setSelectedImage(pizzas[0].imageUrl || "");
     }
-  }, []);
+  }, [pizzas, selectedPizza, selectedText]);
 
-  const handleButtonClick = (index) => {
-    const angle = -((360 / dummyPizzas.length) * index) - 75;
+  const handleButtonClick = (index: number) => {
+    if (pizzas.length === 0) return;
+
+    const angle = -((360 / pizzas.length) * index) - 75;
     setRotateDeg(angle);
-    setSelectedText(dummyPizzas[index].description);
-    setSelectedImage(dummyPizzas[index].imageUrl);
-    setSelectedPizza(dummyPizzas[index]);
+    setSelectedText(pizzas[index].description || "");
+    setSelectedImage(pizzas[index].imageUrl || "");
+    setSelectedPizza(pizzas[index]);
   };
+
+  // Show loading indicator while fetching data
+  if (isLoading) {
+    return (
+      <div className="loading-container">
+        <div className="loading-spinner"></div>
+        <p>Loading pizzas...</p>
+      </div>
+    );
+  }
+
+  // Show error message if fetch failed
+  if (error) {
+    return (
+      <div className="error-container">
+        <p>Error: {error}</p>
+        <button onClick={() => window.location.reload()}>Try Again</button>
+      </div>
+    );
+  }
+
+  // Show empty state if no pizzas available
+  if (pizzas.length === 0) {
+    return (
+      <div className="empty-state">
+        <p>No pizzas available at the moment.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="home-container">
       <div className="pizza-wheel-background">
         {/* White circle - hide on mobile */}
-        {!isMobile && (
-          <div className="white-circle"></div>
-        )}
+        {!isMobile && <div className="white-circle"></div>}
 
         {/* Pizza wheel animation - only on desktop */}
         {!isMobile && (
@@ -114,22 +161,29 @@ const Home = () => {
             animate={{ rotate: rotateDeg }}
             transition={{
               duration: 1,
-              ease: 'easeInOut',
+              ease: "easeInOut",
             }}
             className="pizza-wheel"
           >
-            {dummyPizzas.map((pizza, index) => (
+            {pizzas.map((pizza, index) => (
               <motion.div
-                key={pizza.pizzaId}
+                key={pizza.id}
                 className="pizza-wheel-item"
                 style={{
-                  transform: `translate(-50%, -50%) rotate(${(360 / dummyPizzas.length) * index}deg) translateY(-1000px)`,
+                  transform: `translate(-50%, -50%) rotate(${
+                    (360 / pizzas.length) * index
+                  }deg) translateY(-1000px)`,
                 }}
               >
                 <motion.img
                   src={pizza.imageUrl}
                   alt={pizza.name}
                   className="pizza-image"
+                  style={{ transform: "rotate(90deg)" }}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/pizza-placeholder.jpg"; // Fallback image
+                  }}
                 />
               </motion.div>
             ))}
@@ -139,18 +193,23 @@ const Home = () => {
         {/* Mobile Layout - Pizza Grid */}
         {isMobile && (
           <div className="mobile-pizza-grid">
-            {dummyPizzas.map((pizza, index) => (
-              <div 
-                key={pizza.pizzaId} 
+            {pizzas.map((pizza, index) => (
+              <div
+                key={pizza.id}
                 className={`mobile-pizza-item ${
-                  selectedPizza?.pizzaId === pizza.pizzaId ? 'selected' : ''
+                  selectedPizza?.id === pizza.id ? "selected" : ""
                 }`}
                 onClick={() => handleButtonClick(index)}
               >
-                <img 
-                  src={pizza.imageUrl} 
-                  alt={pizza.name} 
+                <img
+                  src={pizza.imageUrl}
+                  alt={pizza.name}
                   className="mobile-pizza-image"
+                  style={{ transform: "rotate(90deg)" }}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/pizza-placeholder.jpg"; // Fallback image
+                  }}
                 />
                 <span className="mobile-pizza-name">{pizza.name}</span>
               </div>
@@ -159,31 +218,33 @@ const Home = () => {
         )}
 
         {/* Pizza description panel */}
-        <div className={`pizza-description-panel ${isMobile ? 'mobile' : ''}`}>
-          <h3>{selectedPizza?.name || ''}</h3>
-          <p>{selectedText || 'Select a pizza to see its description'}</p>
+        <div className={`pizza-description-panel ${isMobile ? "mobile" : ""}`}>
+          <h3>{selectedPizza?.name || ""}</h3>
+          <p>{selectedText || "Select a pizza to see its description"}</p>
           {selectedPizza && (
-            <div className="pizza-price">
-              {selectedPizza.price} Ft
-            </div>
+            <div className="pizza-price">{selectedPizza.price} Ft</div>
           )}
         </div>
 
         {/* Pizza selection buttons - only on desktop */}
         {!isMobile && (
           <div className="pizza-selection-buttons">
-            {dummyPizzas.map((pizza, index) => (
+            {pizzas.map((pizza, index) => (
               <button
-                key={pizza.pizzaId}
+                key={pizza.id}
                 className="pizza-button"
                 onClick={() => handleButtonClick(index)}
               >
-                <img 
-                  src={pizza.imageUrl} 
-                  alt={pizza.name} 
+                <img
+                  src={pizza.imageUrl}
+                  alt={pizza.name}
                   className={`pizza-button-image ${
-                    selectedImage === pizza.imageUrl ? 'selected' : ''
+                    selectedImage === pizza.imageUrl ? "selected" : ""
                   }`}
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "/pizza-placeholder.jpg"; // Fallback image
+                  }}
                 />
                 <span className="pizza-button-name">{pizza.name}</span>
               </button>
