@@ -3,13 +3,15 @@ import { Product } from "../../utils/types";
 import { BASE_URL } from "../../utils/backend-conf";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./Products.css";
-import { ToastContainer, toast } from "react-toastify"; // Ensure toast is imported
+import { ToastContainer } from "react-toastify"; // Re-add ToastContainer import
 import "react-toastify/dist/ReactToastify.css";
+import { useCart } from "../../context/CartContext";
 
 const Products = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -17,7 +19,7 @@ const Products = () => {
         setLoading(true);
         const response = await fetch(`${BASE_URL}/api/Products`);
         if (!response.ok) {
-          throw new Error('Failed to fetch products');
+          throw new Error("Failed to fetch products");
         }
         const data = await response.json();
         setProducts(data);
@@ -27,12 +29,12 @@ const Products = () => {
       } finally {
         setLoading(false);
       }
-    }
+    };
     fetchProducts();
   }, []);
 
   // Map the products data to match the ProductCard component props
-  const mappedProducts = products.map(product => ({
+  const mappedProducts = products.map((product) => ({
     id: product.id.toString(),
     name: product.name,
     price: product.price,
@@ -43,15 +45,23 @@ const Products = () => {
   }));
 
   const handleAddToCart = (productId: string) => {
-    // Prevent duplicate notifications
-    toast.dismiss();
-    toast.success("Product added to cart!");
-    // Add your logic for adding the product to the cart here
+    const product = mappedProducts.find((p) => p.id === productId);
+    if (product) {
+      // Let the cart context handle authentication check and toast notifications
+      addToCart({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        imageUrl: product.imageUrl,
+      });
+    }
   };
 
-  if (loading) return <div className="products-loading">Loading products...</div>;
+  if (loading)
+    return <div className="products-loading">Loading products...</div>;
   if (error) return <div className="products-error">{error}</div>;
-  if (mappedProducts.length === 0) return <div className="products-empty">No products available</div>;
+  if (mappedProducts.length === 0)
+    return <div className="products-empty">No products available</div>;
 
   return (
     <div className="products-container">
@@ -65,11 +75,11 @@ const Products = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-      /> 
+      />
       <h1 className="products-title">Our Menu</h1>
       <div className="products-grid">
-        {mappedProducts.map(product => (
-          <ProductCard 
+        {mappedProducts.map((product) => (
+          <ProductCard
             key={product.id}
             product={product}
             onAddToCart={() => handleAddToCart(product.id)} // Ensure ProductCard handles this prop
@@ -78,7 +88,6 @@ const Products = () => {
       </div>
     </div>
   );
-}
-
+};
 
 export default Products;
