@@ -5,19 +5,6 @@ import "./ProductCard.css";
 import { ProductCardProps } from "../../utils/types.ts";
 import "react-toastify/dist/ReactToastify.css";
 
-interface ProductCardProps {
-  product: {
-    id: string;
-    name: string;
-    price: number;
-    imageUrl: string;
-    description: string;
-    isAvailable: boolean;
-    category: string;
-  };
-  onAddToCart?: () => void;
-}
-
 const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
   return (
     <div className="product-card">
