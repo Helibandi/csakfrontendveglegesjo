@@ -1,9 +1,9 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import './OrderConfirm.css'; // We'll create this CSS file
-import { useEffect, useState } from 'react';
-import { BASE_URL } from '../../utils/backend-conf';
-import { Orders } from '../../utils/types';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "./OrderConfirm.css"; // We'll create this CSS file
+import { useEffect, useState } from "react";
+import { BASE_URL } from "../../utils/backend-conf";
+import { Orders } from "../../utils/types";
 
 const OrderConfirm = () => {
   const navigate = useNavigate();
@@ -15,40 +15,41 @@ const OrderConfirm = () => {
     const fetchOrders = async () => {
       try {
         setLoading(true);
-        const accesstoken = localStorage.getItem('accessToken'); 
-        
+        const accesstoken = localStorage.getItem("accessToken");
+
         const response = await fetch(`${BASE_URL}/api/Orders/my-orders`, {
-          method: 'GET',
+          method: "GET",
           headers: {
-            'Authorization': `Bearer ${accesstoken}`,
-            'Content-Type': 'application/json'
-          }
+            Authorization: `Bearer ${accesstoken}`,
+            "Content-Type": "application/json",
+          },
         });
-        
+
         if (!response.ok) {
           if (response.status === 401) {
-            throw new Error('Unauthorized - Please login again');
+            throw new Error("Unauthorized - Please login again");
           }
-          throw new Error('Failed to fetch orders');
+          throw new Error("Failed to fetch orders");
         }
-        
+
         const data = await response.json();
         setOrders(data);
-        
+
         // Get the most recent order (assuming orders are sorted by date)
         if (data.length > 0) {
           // Sort orders by date (newest first)
-          const sortedOrders = [...data].sort((a, b) => 
-            new Date(b.orderDate).getTime() - new Date(a.orderDate).getTime()
+          const sortedOrders = [...data].sort(
+            (a, b) =>
+              new Date(b.orderDate).getTime() - new Date(a.orderDate).getTime()
           );
           setLatestOrder(sortedOrders[0]);
         }
       } catch (err) {
-        console.error('Fetch error:', err);
+        console.error("Fetch error:", err);
       } finally {
         setLoading(false);
       }
-    }
+    };
     fetchOrders();
   }, []);
 
@@ -62,8 +63,8 @@ const OrderConfirm = () => {
         <div className="order-confirm-card">
           <h1>No Order Found</h1>
           <p>We couldn't find your order information.</p>
-          <button 
-            onClick={() => navigate('/')} 
+          <button
+            onClick={() => navigate("/")}
             className="continue-shopping-btn"
           >
             Return to Homepage
@@ -75,10 +76,10 @@ const OrderConfirm = () => {
 
   // Calculate order totals
   const subtotal = latestOrder.orderItems.reduce(
-    (sum, item) => sum + item.totalPrice, 0
+    (sum, item) => sum + item.totalPrice,
+    0
   );
-  const deliveryFee = 1500;
-  const total = subtotal + deliveryFee;
+  const total = subtotal;
 
   // Parse the delivery address (assuming it's stored as a JSON string)
   let deliveryAddressObj;
@@ -89,7 +90,7 @@ const OrderConfirm = () => {
       deliveryAddressFormatted = `${deliveryAddressObj.fullName}, ${deliveryAddressObj.address}, ${deliveryAddressObj.city}, ${deliveryAddressObj.zipCode}`;
     }
   } catch (error) {
-    console.log('Could not parse address as JSON, using as is');
+    console.log("Could not parse address as JSON, using as is");
   }
 
   return (
@@ -97,7 +98,10 @@ const OrderConfirm = () => {
       <div className="order-confirm-card">
         <div className="order-confirm-header">
           <svg className="order-confirm-icon" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" />
+            <path
+              fill="currentColor"
+              d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"
+            />
           </svg>
           <h1>Order Confirmed!</h1>
           <p className="order-confirm-subtext">Thank you for your purchase</p>
@@ -112,22 +116,24 @@ const OrderConfirm = () => {
             </div>
             <div className="order-meta-item">
               <span>Date:</span>
-              <strong>{new Date(latestOrder.orderDate).toLocaleDateString()}</strong>
+              <strong>
+                {new Date(latestOrder.orderDate).toLocaleDateString()}
+              </strong>
             </div>
           </div>
 
           <div className="order-items">
-            {latestOrder.orderItems.map(item => (
+            {latestOrder.orderItems.map((item) => (
               <div key={item.id} className="order-item">
-                <img 
-                  src={item.product.imageUrl || '/pizza-placeholder.jpg'}
-                  alt={item.product.name} 
+                <img
+                  src={item.product.imageUrl || "/pizza-placeholder.jpg"}
+                  alt={item.product.name}
                   className="item-image"
                   onError={(e) => {
                     // Only replace with placeholder if it's not already the placeholder
                     const target = e.target as HTMLImageElement;
-                    if (!target.src.includes('pizza-placeholder.jpg')) {
-                      target.src = '/pizza-placeholder.jpg';
+                    if (!target.src.includes("pizza-placeholder.jpg")) {
+                      target.src = "/pizza-placeholder.jpg";
                     }
                   }}
                 />
@@ -135,9 +141,7 @@ const OrderConfirm = () => {
                   <h3>{item.product.name}</h3>
                   <p>Qty: {item.quantity}</p>
                 </div>
-                <div className="item-price">
-                  ${item.totalPrice.toFixed(0)}
-                </div>
+                <div className="item-price">${item.totalPrice.toFixed(0)}</div>
               </div>
             ))}
           </div>
@@ -149,7 +153,7 @@ const OrderConfirm = () => {
             </div>
             <div className="summary-row">
               <span>Delivery Fee</span>
-              <span>${(deliveryFee).toFixed(0)}</span>
+              <span>Free</span>
             </div>
             <div className="summary-row total">
               <span>Total</span>
@@ -166,10 +170,7 @@ const OrderConfirm = () => {
           </p>
         </div>
 
-        <button 
-          onClick={() => navigate('/')} 
-          className="continue-shopping-btn"
-        >
+        <button onClick={() => navigate("/")} className="continue-shopping-btn">
           Continue Shopping
         </button>
       </div>

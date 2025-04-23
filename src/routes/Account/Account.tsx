@@ -172,7 +172,7 @@ const Account = () => {
       }
     } catch (error) {
       console.error("Error updating user data:", error);
-      alert("Failed to update user information");
+      alert("Failed to update user information. Please try again.");
     }
   };
 
