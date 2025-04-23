@@ -1,89 +1,86 @@
-import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { BASE_URL } from '../../utils/backend-conf';
-import { Orders } from '../../utils/types';
-import './OrderDetails.css';
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { BASE_URL } from "../../utils/backend-conf";
+import { Orders } from "../../utils/types";
+import "./OrderDetails.css";
+import useAuth from "../../hooks/UseAuth";
 
 const OrderDetails = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [order, setOrder] = useState<Orders | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
   const [statusUpdating, setStatusUpdating] = useState(false);
+  const { auth } = useAuth(); // Use the custom hook to get the auth token
 
   useEffect(() => {
     const fetchOrderDetails = async () => {
       try {
         setLoading(true);
-        const accesstoken = localStorage.getItem('accessToken'); 
-        
+        //const accesstoken = localStorage.getItem('accessToken');
+
         const response = await fetch(`${BASE_URL}/api/Orders/${id}`, {
-          method: 'GET',
+          method: "GET",
           headers: {
-            'Authorization': `Bearer ${accesstoken}`,
-            'Content-Type': 'application/json'
-          }
+            Authorization: `Bearer ${auth.accessToken}`,
+            "Content-Type": "application/json",
+          },
         });
-        
-        if (!response.ok) {
-          if (response.status === 401) {
-            throw new Error('Unauthorized - Please login again');
-          }
-          throw new Error(`Failed to fetch order details (Status: ${response.status})`);
-        }
-        
+
         const data = await response.json();
+        console.log("Fetched order details:", data); // Debugging line
         setOrder(data);
       } catch (err) {
-        console.error('Fetch error:', err);
-        setError(err instanceof Error ? err.message : 'Failed to load order details');
+        console.error("Fetch error:", err);
+        setError(
+          err instanceof Error ? err.message : "Failed to load order details"
+        );
       } finally {
         setLoading(false);
       }
     };
-    
+
     fetchOrderDetails();
   }, [id]);
-  
-  const updateOrderStatus = async (newStatus: Orders['status']) => {
+
+  const updateOrderStatus = async (newStatus: Orders["status"]) => {
     if (!order) return;
-    
+
     try {
       setStatusUpdating(true);
-      const accesstoken = localStorage.getItem('accessToken'); 
-      
+      //const accesstoken = localStorage.getItem("accessToken");
+
       const response = await fetch(`${BASE_URL}/api/Orders/${id}/status`, {
-        method: 'PATCH',
+        method: "PATCH",
         headers: {
-          'Authorization': `Bearer ${accesstoken}`,
-          'Content-Type': 'application/json'
+          Authorization: `Bearer ${auth.accessToken}`,
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          status: newStatus
+          status: newStatus,
         }),
       });
-  
+
       if (!response.ok) {
-        throw new Error('Failed to update order status');
+        throw new Error("Failed to update order status");
       }
-      
+
       // Update local state
-      setOrder(prev => prev ? {...prev, status: newStatus} : null);
-      
+      setOrder((prev) => (prev ? { ...prev, status: newStatus } : null));
     } catch (error) {
-      console.error('Error updating order status:', error);
-      setError('Failed to update order status');
+      console.error("Error updating order status:", error);
+      setError("Failed to update order status");
     } finally {
       setStatusUpdating(false);
     }
   };
-  
+
   // Parse the delivery address (assuming it's stored as a JSON string)
-  let deliveryAddress = order?.deliveryAddress || '';
+  let deliveryAddress = order?.deliveryAddress || "";
   try {
     const addressObj = JSON.parse(deliveryAddress);
-    if (addressObj && typeof addressObj === 'object') {
+    if (addressObj && typeof addressObj === "object") {
       deliveryAddress = `${addressObj.fullName}, ${addressObj.address}, ${addressObj.city}, ${addressObj.zipCode}`;
     }
   } catch (e) {
@@ -99,7 +96,7 @@ const OrderDetails = () => {
       <div className="error-container">
         <h2>Error</h2>
         <p>{error}</p>
-        <button onClick={() => navigate('/admin')} className="back-btn">
+        <button onClick={() => navigate("/admin")} className="back-btn">
           Back to Dashboard
         </button>
       </div>
@@ -111,7 +108,7 @@ const OrderDetails = () => {
       <div className="not-found">
         <h2>Order Not Found</h2>
         <p>The requested order could not be found.</p>
-        <button onClick={() => navigate('/admin')} className="back-btn">
+        <button onClick={() => navigate("/admin")} className="back-btn">
           Back to Dashboard
         </button>
       </div>
@@ -120,7 +117,8 @@ const OrderDetails = () => {
 
   // Calculate order totals
   const subtotal = order.orderItems.reduce(
-    (sum, item) => sum + item.totalPrice, 0
+    (sum, item) => sum + item.totalPrice,
+    0
   );
   const deliveryFee = 1500;
   const total = subtotal + deliveryFee;
@@ -128,10 +126,7 @@ const OrderDetails = () => {
   return (
     <div className="order-details-page">
       <div className="order-details-header">
-        <button 
-          onClick={() => navigate('/admin')}
-          className="back-btn"
-        >
+        <button onClick={() => navigate("/admin")} className="back-btn">
           ← Back to Dashboard
         </button>
         <h1>Order #{order.id}</h1>
@@ -139,7 +134,7 @@ const OrderDetails = () => {
           <span>Date: {new Date(order.orderDate).toLocaleString()}</span>
         </div>
       </div>
-      
+
       <div className="order-details-grid">
         <div className="order-info-panel">
           <div className="status-section">
@@ -150,7 +145,9 @@ const OrderDetails = () => {
               </span>
               <select
                 value={order.status}
-                onChange={(e) => updateOrderStatus(e.target.value as Orders['status'])}
+                onChange={(e) =>
+                  updateOrderStatus(e.target.value as Orders["status"])
+                }
                 disabled={statusUpdating}
                 className="status-select"
               >
@@ -160,12 +157,12 @@ const OrderDetails = () => {
               </select>
             </div>
           </div>
-          
+
           <div className="delivery-section">
             <h2>Delivery Information</h2>
             <p className="delivery-address">{deliveryAddress}</p>
           </div>
-          
+
           <div className="payment-section">
             <h2>Payment Details</h2>
             <p className="payment-method">Method: Cash on Delivery</p>
@@ -185,21 +182,21 @@ const OrderDetails = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="order-items-panel">
           <h2>Order Items</h2>
           <div className="order-items-list">
             {order.orderItems.map((item) => (
               <div key={item.id} className="order-item-card">
                 <div className="item-image-container">
-                  <img 
-                    src={item.product.imageUrl || '/pizza-placeholder.jpg'}
+                  <img
+                    src={item.product.imageUrl || "/pizza-placeholder.jpg"}
                     alt={item.product.name}
                     className="item-image"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
-                      if (!target.src.includes('pizza-placeholder.jpg')) {
-                        target.src = '/pizza-placeholder.jpg';
+                      if (!target.src.includes("pizza-placeholder.jpg")) {
+                        target.src = "/pizza-placeholder.jpg";
                       }
                     }}
                   />
@@ -208,8 +205,12 @@ const OrderDetails = () => {
                   <h3 className="item-name">{item.product.name}</h3>
                   <p className="item-description">{item.product.description}</p>
                   <div className="item-meta">
-                    <span className="item-price">${item.price.toFixed(0)} × {item.quantity}</span>
-                    <span className="item-total">${item.totalPrice.toFixed(0)}</span>
+                    <span className="item-price">
+                      ${item.price.toFixed(0)} × {item.quantity}
+                    </span>
+                    <span className="item-total">
+                      ${item.totalPrice.toFixed(0)}
+                    </span>
                   </div>
                 </div>
               </div>
