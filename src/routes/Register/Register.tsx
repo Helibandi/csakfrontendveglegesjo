@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BASE_URL } from "../../utils/backend-conf";
@@ -23,7 +22,6 @@ interface RegistrationForm {
 }
 
 const Register = () => {
-  const navigate = useNavigate();
   const emailRef = useRef<HTMLInputElement>(null);
   const errRef = useRef<HTMLParagraphElement>(null);
 
@@ -51,9 +49,6 @@ const Register = () => {
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const [emailExists, setEmailExists] = useState(false);
-  const [checkingEmail, setCheckingEmail] = useState(false);
-
   useEffect(() => {
     emailRef.current?.focus();
   }, []);
@@ -71,57 +66,27 @@ const Register = () => {
     setErrMsg("");
   }, [formData.Email, formData.Password, formData.ConfirmPassword]);
 
-  const checkEmailExists = async (email: string) => {
-    if (!EMAIL_REGEX.test(email)) return;
-
-    setCheckingEmail(true);
-    try {
-      const response = await fetch(
-        `${BASE_URL}/api/account/check-email?email=${encodeURIComponent(
-          email
-        )}`,
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-
-      if (response.ok) {
-        const data = await response.json();
-        setEmailExists(data.exists);
-
-        if (data.exists) {
-          setErrMsg(
-            "Email is already registered. Please use a different email or try to login."
-          );
-        }
-      } else {
-        console.warn("Email check endpoint not available");
-        setEmailExists(false);
-      }
-    } catch (error) {
-      console.error("Error checking email:", error);
-      setEmailExists(false);
-    } finally {
-      setCheckingEmail(false);
-    }
+  // Add function to handle direct navigation with page refresh
+  const navigateWithRefresh = (path: string) => {
+    window.location.href = path; // This will cause a full page refresh
   };
+
+  // Add effect to clean up any potentially problematic state on component unmount
+  useEffect(() => {
+    return () => {
+      // Remove any temporary registration data from localStorage/sessionStorage
+      sessionStorage.removeItem("registrationData");
+      sessionStorage.removeItem("emailValidation");
+      // Other cleanup if needed
+    };
+  }, []);
 
   const handleEmailBlur = () => {
     setEmailFocus(false);
-    if (formData.Email && validEmail) {
-      checkEmailExists(formData.Email);
-    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-
-    if (name === "Email" && emailExists) {
-      setEmailExists(false);
-      setErrMsg("");
-    }
-
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
@@ -134,42 +99,6 @@ const Register = () => {
     if (!v1 || !v2) {
       setErrMsg("Invalid Entry");
       return;
-    }
-
-    if (emailExists) {
-      setErrMsg("Email already registered. Please use a different email.");
-      return;
-    }
-
-    if (validEmail) {
-      setCheckingEmail(true);
-      try {
-        const checkResponse = await fetch(
-          `${BASE_URL}/api/account/check-email?email=${encodeURIComponent(
-            formData.Email
-          )}`,
-          {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-          }
-        );
-
-        if (checkResponse.ok) {
-          const checkData = await checkResponse.json();
-          if (checkData.exists) {
-            setEmailExists(true);
-            setErrMsg(
-              "Email already registered. Please use a different email."
-            );
-            setCheckingEmail(false);
-            return;
-          }
-        }
-      } catch (error) {
-        console.warn("Final email check failed:", error);
-      } finally {
-        setCheckingEmail(false);
-      }
     }
 
     const requestData = {
@@ -202,31 +131,24 @@ const Register = () => {
         try {
           const errorData = JSON.parse(errorText);
 
-          // Check for specific error codes
           if (Array.isArray(errorData) && errorData.length > 0) {
             const duplicateError = errorData.find(
               (err) => err.code === "DuplicateUserName"
             );
             if (duplicateError) {
-              // Set email exists to true to prevent resubmission
-              setEmailExists(true);
               errorMessage =
                 "This email address is already registered. Please use a different email or sign in.";
             } else {
-              // Handle other error arrays
               errorMessage = errorData.map((err) => err.description).join(", ");
             }
           } else if (errorData.errors) {
-            // Handle validation errors object
             errorMessage = Object.entries(errorData.errors)
               .map(([field, errors]) => `${field}: ${errors}`)
               .join(", ");
           } else if (errorData.message || errorData.title) {
-            // Handle standard error messages
             errorMessage = errorData.message || errorData.title;
           }
         } catch (e) {
-          // If not valid JSON, use the raw text but filter sensitive content
           errorMessage = errorText || errorMessage;
         }
 
@@ -255,7 +177,10 @@ const Register = () => {
         Password: "",
         ConfirmPassword: "",
       });
-      setTimeout(() => navigate("/login"), 6000);
+      setTimeout(() => {
+        // Use direct navigation instead of React Router navigation to force refresh
+        window.location.href = "/login";
+      }, 6000);
     } catch (err: any) {
       if (!err?.response && err instanceof Error) {
         setErrMsg(err.message || "No Server Response");
@@ -290,7 +215,13 @@ const Register = () => {
               Success! You will be redirected to the login page in 5 seconds!
             </h2>
             <p>
-              <Link to="/login">Sign In</Link>
+              {/* Replace Link with button that forces refresh */}
+              <button
+                onClick={() => navigateWithRefresh("/login")}
+                className="sign-in-button"
+              >
+                Sign In
+              </button>
             </p>
           </section>
         ) : (
@@ -298,19 +229,14 @@ const Register = () => {
             <div className="form-group">
               <label htmlFor="Email">
                 Email Address
-                <span className={validEmail && !emailExists ? "valid" : "hide"}>
+                <span className={validEmail ? "valid" : "hide"}>
                   <CheckIcon className="check-icon" />
                 </span>
                 <span
-                  className={
-                    (!validEmail && formData.Email) || emailExists
-                      ? "invalid"
-                      : "hide"
-                  }
+                  className={validEmail || !formData.Email ? "hide" : "invalid"}
                 >
                   <RemoveCircleOutlineIcon className="error-icon" />
                 </span>
-                {checkingEmail && <span className="checking">Checking...</span>}
               </label>
               <input
                 type="email"
@@ -321,7 +247,7 @@ const Register = () => {
                 onChange={handleChange}
                 value={formData.Email}
                 required
-                aria-invalid={validEmail && !emailExists ? "false" : "true"}
+                aria-invalid={validEmail ? "false" : "true"}
                 aria-describedby="emailnote"
                 onFocus={() => setEmailFocus(true)}
                 onBlur={handleEmailBlur}
@@ -333,13 +259,6 @@ const Register = () => {
                 }
               >
                 Please enter a valid email address.
-              </p>
-              <p
-                id="emailexists"
-                className={emailExists ? "instructions error" : "offscreen"}
-              >
-                This email is already registered. Please use a different email
-                or sign in.
               </p>
             </div>
 
@@ -509,20 +428,19 @@ const Register = () => {
             <button
               type="submit"
               className="register-button"
-              disabled={
-                !validEmail ||
-                !validMatch ||
-                !validPassword ||
-                emailExists ||
-                checkingEmail
-              }
+              disabled={!validEmail || !validMatch || !validPassword}
             >
-              {checkingEmail ? "Checking..." : "Register"}
+              Register
             </button>
 
-            <Link to="/login" className="login-link">
+            {/* Replace Link with button that forces refresh */}
+            <button
+              type="button"
+              className="login-link"
+              onClick={() => navigateWithRefresh("/login")}
+            >
               Already have an account? Sign in
-            </Link>
+            </button>
           </form>
         )}
         <ToastContainer />

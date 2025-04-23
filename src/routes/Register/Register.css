@@ -196,6 +196,40 @@ body {
   text-decoration: underline;
 }
 
+/* Style the sign-in button to look like a link */
+.sign-in-button {
+  background: none;
+  border: none;
+  color: #1976d2;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.sign-in-button:hover {
+  color: #0d47a1;
+}
+
+/* Make the login link button look like a link */
+button.login-link {
+  background: none;
+  border: none;
+  color: #1976d2;
+  cursor: pointer;
+  display: block;
+  font-size: 0.9rem;
+  margin: 1.5rem auto 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+}
+
+button.login-link:hover {
+  color: #0d47a1;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .register-card {
