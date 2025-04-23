@@ -5,6 +5,8 @@ import { Orders } from '../../utils/types';
 import { User } from '../../utils/types';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useAuth from '../../hooks/UseAuth';
+import useRefreshToken from '../../hooks/useRefreshToken';
 
 const Account = () => {
   const [activeTab, setActiveTab] = useState('shipping');
@@ -18,6 +20,8 @@ const Account = () => {
     confirm: ''
   });
   const [passwordError, setPasswordError] = useState('');
+  const {auth, setAuth} = useAuth();
+  const refresh = useRefreshToken();
 
   const notify = () => toast.success('Operation completed successfully!', { autoClose: 4000 });
 
@@ -37,12 +41,12 @@ const Account = () => {
     const fetchOrders = async () => {
       try {
         setLoading(true);
-        const accesstoken = localStorage.getItem('accessToken'); 
+        //const accesstoken = localStorage.getItem('accessToken'); 
         
         const response = await fetch(`${BASE_URL}/api/Orders/my-orders`, {
           method: 'GET',
           headers: {
-            'Authorization': `Bearer ${accesstoken}`,
+            'Authorization': `Bearer ${auth.accessToken}`,
             'Content-Type': 'application/json'
           }
         });
@@ -102,6 +106,7 @@ const Account = () => {
   const handleDataChange = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!editableUser) return;
+    refresh();
 
     try {
       // Transform data to match the API's expected format
@@ -114,11 +119,11 @@ const Account = () => {
         PhoneNumber: editableUser.PhoneNumber
       };
 
-      const accesstoken = localStorage.getItem('accessToken'); 
+      //const accesstoken = localStorage.getItem('accessToken'); 
       const response = await fetch(`${BASE_URL}/api/account/${editableUser.sub}/edit-user`, {
         method: 'PUT',
         headers: {
-          'Authorization': `Bearer ${accesstoken}`,
+          'Authorization': `Bearer ${auth.accessToken}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(userData)

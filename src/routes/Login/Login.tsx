@@ -69,6 +69,7 @@ const Login = () => {
       localStorage.setItem("accessToken", newAuth.accessToken);
       localStorage.setItem("refreshToken", newAuth.refreshToken);
       localStorage.setItem("role", newAuth.role.join(','));
+      localStorage.setItem("useralldata", JSON.stringify(parsedToken));
   
       console.log("Login successful:", newAuth);
 
