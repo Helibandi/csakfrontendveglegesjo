@@ -129,8 +129,11 @@ const Account = () => {
         PhoneNumber: editableUser.PhoneNumber,
       };
 
+      // Get user ID safely - add type assertion to avoid TypeScript error
+      const userId = (editableUser as any).sub || editableUser.id || "";
+
       const response = await fetch(
-        `${BASE_URL}/api/account/${editableUser.sub}/edit-user`,
+        `${BASE_URL}/api/account/${userId}/edit-user`,
         {
           method: "PUT",
           headers: {
@@ -148,20 +151,23 @@ const Account = () => {
       // Handle 204 No Content response
       if (response.status === 204) {
         // Update localStorage with the edited user data
-        const updatedUserData = {
-          ...user,
-          FirstName: editableUser.FirstName,
-          LastName: editableUser.LastName,
-          Address: editableUser.Address,
-          City: editableUser.City,
-          PostalCode: editableUser.PostalCode,
-          PhoneNumber: editableUser.PhoneNumber,
-        };
+        if (user) {
+          // Create updatedUserData with a type assertion to ensure it matches User type
+          const updatedUserData = {
+            ...user,
+            FirstName: editableUser.FirstName,
+            LastName: editableUser.LastName,
+            Address: editableUser.Address,
+            City: editableUser.City,
+            PostalCode: editableUser.PostalCode,
+            PhoneNumber: editableUser.PhoneNumber,
+          } as User; // Use type assertion to satisfy TypeScript
 
-        setUser(updatedUserData);
-        setEditableUser(updatedUserData);
-        localStorage.setItem("useralldata", JSON.stringify(updatedUserData));
-        notify();
+          setUser(updatedUserData);
+          setEditableUser(updatedUserData);
+          localStorage.setItem("useralldata", JSON.stringify(updatedUserData));
+          notify();
+        }
       } else {
         // If response has content
         const updatedUser = await response.json();
