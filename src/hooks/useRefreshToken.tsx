@@ -19,8 +19,8 @@ const useRefreshToken = () => {
       }
 
       console.log("Refreshing with tokens:", {
-        accessToken: storedAccessToken.substring(0, 10) + "...",
-        refreshToken: storedRefreshToken.substring(0, 10) + "..."
+        accessToken: storedAccessToken,
+        refreshToken: storedRefreshToken
       });
 
       const response = await axios.post(

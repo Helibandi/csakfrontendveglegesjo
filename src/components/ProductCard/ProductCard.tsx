@@ -4,20 +4,23 @@ import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext.tsx';
 import './ProductCard.css';
 import { ProductCardProps } from '../../utils/types.ts';
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+interface ProductCardProps {
+  product: {
+    id: string;
+    name: string;
+    price: number;
+    imageUrl: string;
+    description: string;
+    isAvailable: boolean;
+    category: string;
+  };
+  onAddToCart?: () => void; // Add the onAddToCart prop
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
   const { addToCart } = useCart();
-  const notify = () => toast.success(`${product.name} added to cart!`, {
-    position: "top-right",
-    autoClose: 2000,
-    hideProgressBar: true,
-    closeOnClick: true,
-    pauseOnHover: true,
-    draggable: true,
-    progress: undefined,
-  });
 
   return (
     <div className="product-card">
@@ -41,7 +44,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="product-footer">
         <span className="product-price">{product.price}</span>
         <button 
-          onClick={() => {addToCart({ id: product.id, name: product.name, price: product.price, imageUrl: product.imageUrl }) , notify()}}
+          onClick={() => {
+            addToCart({ id: product.id, name: product.name, price: product.price, imageUrl: product.imageUrl });
+            if (onAddToCart) onAddToCart(); // Handle the onAddToCart event
+          }}
           className="add-to-cart-button"
           aria-label={`Add ${product.name} to cart`}
           disabled={!product.isAvailable}

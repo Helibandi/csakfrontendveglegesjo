@@ -3,7 +3,7 @@ import { Product } from "../../utils/types";
 import { BASE_URL } from "../../utils/backend-conf";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import "./Products.css";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify"; // Ensure toast is imported
 import "react-toastify/dist/ReactToastify.css";
 
 const Products = () => {
@@ -42,6 +42,13 @@ const Products = () => {
     category: product.category, // Include category property
   }));
 
+  const handleAddToCart = (productId: string) => {
+    // Prevent duplicate notifications
+    toast.dismiss();
+    toast.success("Product added to cart!");
+    // Add your logic for adding the product to the cart here
+  };
+
   if (loading) return <div className="products-loading">Loading products...</div>;
   if (error) return <div className="products-error">{error}</div>;
   if (mappedProducts.length === 0) return <div className="products-empty">No products available</div>;
@@ -65,11 +72,13 @@ const Products = () => {
           <ProductCard 
             key={product.id}
             product={product}
+            onAddToCart={() => handleAddToCart(product.id)} // Ensure ProductCard handles this prop
           />
         ))}
       </div>
     </div>
   );
 }
+
 
 export default Products;
