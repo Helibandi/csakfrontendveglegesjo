@@ -25,7 +25,7 @@ const Account = () => {
     confirm: "",
   });
   const [passwordError, setPasswordError] = useState("");
-  const { auth, setAuth } = useAuth();
+  const { auth } = useAuth();
   const refresh = useRefreshToken();
 
   // Add validation state variables

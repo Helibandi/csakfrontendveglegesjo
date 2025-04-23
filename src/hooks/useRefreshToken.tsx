@@ -12,7 +12,7 @@ interface AuthState {
 }
 
 const useRefreshToken = () => {
-  const { auth, setAuth } = useAuth();
+  const { setAuth } = useAuth();
 
   const refresh = async () => {
     // Retrieve tokens from localStorage

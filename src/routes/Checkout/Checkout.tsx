@@ -21,7 +21,7 @@ const Checkout = () => {
   const [alternateAddress, setAlternateAddress] = useState("");
   const [alternateCity, setAlternateCity] = useState("");
   const [alternateZipCode, setAlternateZipCode] = useState("");
-  const [user, setUser] = useState<User>();
+  const [, setUser] = useState<User>();
   const navigate = useNavigate();
 
   useEffect(() => {
