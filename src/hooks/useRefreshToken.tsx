@@ -85,18 +85,13 @@ const useRefreshToken = () => {
       }
 
       // Add a check to ensure setAuth is a function before calling it
-      if (typeof setAuth === "function") {
-        setAuth((prev: AuthState) => ({
-          ...prev,
-          accessToken: newAccessToken,
-          refreshToken: newRefreshToken,
-          role: newRole,
-          isAuthenticated: true, // Ensure authenticated flag is set
-        }));
-      } else {
-        console.error("setAuth is not a function in useRefreshToken");
-        // Alternative: Update auth context through some other means if available
-      }
+      setAuth((prev: AuthState) => ({
+        ...prev,
+        accessToken: newAccessToken,
+        refreshToken: newRefreshToken,
+        role: newRole,
+        isAuthenticated: true, // Ensure authenticated flag is set
+      }));
 
       return newAccessToken;
     } catch (axiosError: any) {
@@ -194,7 +189,8 @@ const useRefreshToken = () => {
         );
         return storedAccessToken; // Return existing token to continue functionality
       } else {
-        console.error("❌ Token refresh setup error:", axiosError.message);
+        return null; // Return null to indicate refresh failure
+        // console.error("❌ Token refresh setup error:", axiosError.message);
       }
 
       // Only clear tokens for truly critical errors (not network errors)
