@@ -18,6 +18,8 @@ import Layout from "./components/Layout/Layout";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import PersistLogin from "./components/PersistLogin/PersistLogin";
 
+
+
 function App() {
   return (
     <AuthProvider>
@@ -38,7 +40,7 @@ function App() {
                 <Route
                   element={<RequireAuth allowedRoles={["User", "Admin"]} />}
                 >
-                  <Route path="/account" element={<Account />} />
+                  <Route path="/account" element={<Account/>} />
                   <Route path="/cart" element={<CartDisplay />} />
                   <Route path="/checkout" element={<Checkout />} />
                   <Route

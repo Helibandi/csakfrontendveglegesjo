@@ -3837,3 +3837,6 @@ C:\Users\zsuik\OneDrive\Dokumentumok\Projects\csakfrontendveglegesjo\PizzaBacken
 C:\Users\zsuik\OneDrive\Dokumentumok\Projects\csakfrontendveglegesjo\PizzaBackend\obj\Debug\net8.0\PizzaBackend.pdb
 C:\Users\zsuik\OneDrive\Dokumentumok\Projects\csakfrontendveglegesjo\PizzaBackend\obj\Debug\net8.0\PizzaBackend.genruntimeconfig.cache
 C:\Users\zsuik\OneDrive\Dokumentumok\Projects\csakfrontendveglegesjo\PizzaBackend\obj\Debug\net8.0\ref\PizzaBackend.dll
+D:\Goon\csakfrontendveglegesjo\PizzaBackend\obj\Debug\net8.0\PizzaBackend.dll
+D:\Goon\csakfrontendveglegesjo\PizzaBackend\obj\Debug\net8.0\refint\PizzaBackend.dll
+D:\Goon\csakfrontendveglegesjo\PizzaBackend\obj\Debug\net8.0\PizzaBackend.pdb

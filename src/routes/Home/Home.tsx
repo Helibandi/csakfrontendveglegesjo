@@ -205,7 +205,6 @@ const Home = () => {
                   src={pizza.imageUrl}
                   alt={pizza.name}
                   className="mobile-pizza-image"
-                  style={{ transform: "rotate(90deg)" }}
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.src = "/pizza-placeholder.jpg"; // Fallback image

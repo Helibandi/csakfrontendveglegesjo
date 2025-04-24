@@ -1,15 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./OrderConfirm.css"; // We'll create this CSS file
+import "./OrderConfirm.css";
 import { useEffect, useState } from "react";
 import { BASE_URL } from "../../utils/backend-conf";
 import { Orders } from "../../utils/types";
+import { sendOrderConfirmation } from "../../utils/sendEmail";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const OrderConfirm = () => {
   const navigate = useNavigate();
   const [orders, setOrders] = useState<Orders[]>([]);
   const [loading, setLoading] = useState(true);
   const [latestOrder, setLatestOrder] = useState<Orders | null>(null);
+  const [emailSent, setEmailSent] = useState(false);
 
   useEffect(() => {
     const fetchOrders = async () => {
@@ -52,6 +56,50 @@ const OrderConfirm = () => {
     };
     fetchOrders();
   }, []);
+
+  // Send email when latest order is available
+  useEffect(() => {
+    const sendEmail = async () => {
+      if (latestOrder && !emailSent) {
+        try {
+          let userName = "Valued Customer";
+          let deliveryAddressFormatted = latestOrder.deliveryAddress;
+          
+          // Get user name and delivery address from order
+          try {
+            const deliveryAddressObj = JSON.parse(latestOrder.deliveryAddress);
+            if (deliveryAddressObj) {
+              if (deliveryAddressObj.fullName) {
+                userName = deliveryAddressObj.fullName;
+              }
+              
+              deliveryAddressFormatted = `${deliveryAddressObj.fullName || 'Customer'}, ${deliveryAddressObj.address}, ${deliveryAddressObj.city}, ${deliveryAddressObj.zipCode}`;
+            }
+          } catch (error) {
+            console.log("Could not parse address as JSON, using as is");
+          }
+          
+          // Call sendOrderConfirmation - it will handle email retrieval internally
+          await sendOrderConfirmation(
+            "", // Empty string - the function will get email from localStorage
+            latestOrder.orderItems,
+            userName,
+            latestOrder.id,
+            latestOrder.orderDate,
+            latestOrder.totalAmount,
+            deliveryAddressFormatted
+          );
+          
+          setEmailSent(true);
+          toast.success("Order confirmation sent to your email!");
+        } catch (error) {
+          console.error("Failed to send order confirmation email:", error);
+          toast.error(`Email error: ${(error as any)?.message || 'Unknown error'}`);
+        }
+      }
+    };
+    sendEmail();
+  }, [latestOrder, emailSent]);
 
   if (loading) {
     return <div className="loading">Loading order details...</div>;
@@ -174,8 +222,17 @@ const OrderConfirm = () => {
           Continue Shopping
         </button>
       </div>
+      <ToastContainer />
     </div>
   );
 };
 
+// Simple email validation
+function validateEmail(email: string): boolean {
+  if (!email) return false;
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
 export default OrderConfirm;
+

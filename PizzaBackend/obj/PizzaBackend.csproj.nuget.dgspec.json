@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {}
+    "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {
+    "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
+        "projectUniqueName": "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
         "projectName": "PizzaBackend",
-        "projectPath": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
-        "packagesPath": "C:\\Users\\zsuik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zsuik\\OneDrive\\Dokumentumok\\Projects\\csakfrontendveglegesjo\\PizzaBackend\\obj\\",
+        "projectPath": "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
+        "packagesPath": "C:\\Users\\sandorsm\\.nuget\\packages\\",
+        "outputPath": "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\zsuik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sandorsm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,8 +25,7 @@
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net8.0": {
