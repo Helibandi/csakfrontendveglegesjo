@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <RestaurantIcon className="logo-icon" />
-          <span>Slice and Spice</span>
+          <span>Slice & Spice</span>
         </Link>
 
         <nav className={`navbar-links ${isMobileMenuOpen ? "active" : ""}`}>

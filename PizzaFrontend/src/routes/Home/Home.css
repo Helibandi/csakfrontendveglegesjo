@@ -1,6 +1,6 @@
 /* Base Styles */
 .home-container {
-    min-height: 100vh;
+    min-height: 120vh; /* Increased from 100vh to make the page longer */
     position: relative;
     overflow: hidden;
   }
@@ -14,7 +14,8 @@
     justify-content: center;
     position: relative;
     height: 100%;
-    min-height: 100vh;
+    min-height: 120vh; /* Increased from 100vh to make the container longer */
+    padding-bottom: 7rem; /* Added padding at the bottom for extra space */
   }
   
   /* Loading and Error Screens */
@@ -200,15 +201,22 @@
   /* Pizza Selection Buttons */
   .pizza-selection-buttons {
     position: absolute;
-    bottom: 2.5rem;
-    left: 2.5rem;
+    right: 0rem; /* Match right alignment with description panel */
+    bottom: 14rem; /* Initial position that works with most description panel sizes */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 15;
+    width: 400px; /* Match width with description panel */
+    max-width: 40%; /* Match max-width with description panel */
+    transform: translateY(-50%); /* Move up by half of the buttons' height for better alignment */
+    padding-bottom: 1.5rem; /* Add spacing between buttons and panel */
   }
   
   .pizza-button {
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 0.25rem;
     background-color: transparent;
     border-radius: 50%;
     border: none;
@@ -236,17 +244,18 @@
   }
   
   .pizza-button-name {
-    margin-left: 0.75rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: white;
+    display: none; /* Hide the pizza names */
   }
   
   /* Responsive Design */
   @media (max-width: 1500px) {
     .white-circle,
-    .pizza-wheel,
-    .pizza-selection-buttons {
+    .pizza-wheel {
       display: none;
+    }
+    
+    /* Keep buttons visible on smaller screens */
+    .pizza-selection-buttons {
+      bottom: 18rem; /* Adjust for mobile layout */
     }
   }
