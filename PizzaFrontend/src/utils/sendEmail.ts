@@ -10,23 +10,19 @@ export const sendOrderConfirmation = (
   totalAmount: number,
   deliveryAddress: string,
 ): Promise<void> => {
-  // EmailJS credentials
   const serviceId = 'service_5cab3lf';
   const templateId = 'template_5memb9k';
   const publicKey = 'aOIQKlmQa3fhR3cYN';
 
-  // Try to get email directly from localStorage first (most reliable source)
   let email = userEmail;
-  
-  // Get from useralldata if passed email is not valid
+
   if (!email || !validateEmail(email)) {
     try {
       const storedUserData = localStorage.getItem("useralldata");
       if (storedUserData) {
         const userData = JSON.parse(storedUserData);
-        if (userData && userData.Email && validateEmail(userData.Email)) {
+        if (userData?.Email && validateEmail(userData.Email)) {
           email = userData.Email;
-          console.log("Using email from useralldata:", email);
         }
       }
     } catch (error) {
@@ -34,44 +30,30 @@ export const sendOrderConfirmation = (
     }
   }
 
-  // If still no valid email, use a fallback for testing
   if (!email || !validateEmail(email)) {
-    email = "brokiller91@gmail.com"; // Use a fallback email for testing
-    console.log("Using fallback email:", email);
+    email = "brokiller91@gmail.com"; // fallback for testing
   }
 
-  // Format items for email
+  // Format each item as a "sub-object" for EmailJS dynamic rendering
   const formattedItems = orderItems.map(item => ({
     name: item.product.name,
     quantity: item.quantity,
-    price: item.price,
-    totalPrice: item.totalPrice,
-    imageUrl: item.product.imageUrl
+    total_price: item.totalPrice.toLocaleString('hu-HU'),
+    image_url: item.product.imageUrl || 'https://example.com/default-product-image.jpg'
   }));
 
-  // Create a string representation of items for the email
-  const ordersText = formattedItems
-    .map(item => `${item.name} x${item.quantity} - $${item.totalPrice.toFixed(0)}`)
-    .join('\n');
-
-  // Get a sample image URL for the email header if available
-  const sampleImageUrl = formattedItems.length > 0 && formattedItems[0].imageUrl 
-    ? formattedItems[0].imageUrl 
-    : 'https://example.com/default-product-image.jpg';
-
-  // Match EXACTLY the parameter names EmailJS is expecting
   const templateParams = {
     order_id: orderId,
-    orders: ordersText,
-    image_url: sampleImageUrl,
+    orders: formattedItems, // this is now an array
     to_name: userName,
-    units: formattedItems.reduce((sum, item) => sum + item.quantity, 0),
-    price: formattedItems.length > 0 ? formattedItems[0].price : 0,
-    cost: totalAmount,
-    email: email,          // Include both email and userEmail as requested
+    email: email,
     userEmail: email,
     order_date: new Date(orderDate).toLocaleDateString(),
-    delivery_address: deliveryAddress || 'Address not provided'
+    delivery_address: deliveryAddress || 'Address not provided',
+    cost: totalAmount.toLocaleString('hu-HU', {
+      style: 'currency',
+      currency: 'HUF',
+    })
   };
 
   console.log('Sending confirmation email to:', email);
@@ -83,16 +65,12 @@ export const sendOrderConfirmation = (
     })
     .catch((error) => {
       console.error('Failed to send order confirmation email:', error);
-      console.error('Error details:', error.text);
       throw error;
     });
 };
 
-// Email validation
 function validateEmail(email: string): boolean {
   if (!email) return false;
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
 }
-
-
