@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
       } else {
         console.log("Not refreshing - no tokens available");
       }
-    }, 25000); // Refresh every 25 seconds
+    }, 1740000); // Refresh in every 29 minutes
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [refresh, auth?.accessToken, auth?.refreshToken]);

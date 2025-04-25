@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
       </Link>
 
       <div className="product-footer">
-        <span className="product-price">{product.price}</span>
+        <span className="product-price">{product.price} Ft</span>
         <button
           onClick={onAddToCart} // Only use the onAddToCart prop, don't call addToCart directly
           className="add-to-cart-button"

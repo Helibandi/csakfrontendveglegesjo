@@ -268,7 +268,7 @@ const AdminDashboard = () => {
                     </td>
                     <td>{product.name}</td>
                     <td>{product.description}</td>
-                    <td>{product.price.toFixed(0)} HUF</td>
+                    <td>{product.price} Ft</td>
                     <td>
                       <label className="switch">
                         <input
@@ -319,7 +319,7 @@ const AdminDashboard = () => {
                     <td>{order.id}</td>
                     <td>{order.fullUserName}</td>
                     <td>{new Date(order.orderDate).toLocaleDateString()}</td>
-                    <td>{order.totalAmount.toFixed(0)} HUF</td>
+                    <td>{order.totalAmount} Ft</td>
                     <td>
                       <select
                         value={order.status}

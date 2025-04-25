@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./OrderConfirm.css";
 import { useEffect, useState } from "react";
@@ -189,7 +188,7 @@ const OrderConfirm = () => {
                   <h3>{item.product.name}</h3>
                   <p>Qty: {item.quantity}</p>
                 </div>
-                <div className="item-price">${item.totalPrice.toFixed(0)}</div>
+                <div className="item-price">{item.totalPrice} Ft</div>
               </div>
             ))}
           </div>
@@ -197,7 +196,7 @@ const OrderConfirm = () => {
           <div className="order-summary">
             <div className="summary-row">
               <span>Subtotal</span>
-              <span>${subtotal.toFixed(0)}</span>
+              <span>{subtotal} Ft</span>
             </div>
             <div className="summary-row">
               <span>Delivery Fee</span>
@@ -205,7 +204,7 @@ const OrderConfirm = () => {
             </div>
             <div className="summary-row total">
               <span>Total</span>
-              <span>${total.toFixed(0)}</span>
+              <span>{total} Ft</span>
             </div>
           </div>
         </div>
@@ -227,12 +226,6 @@ const OrderConfirm = () => {
   );
 };
 
-// Simple email validation
-function validateEmail(email: string): boolean {
-  if (!email) return false;
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
-}
 
 export default OrderConfirm;
 

@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {}
+    "C:\\Users\\Kálmán\\Documents\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {}
   },
   "projects": {
-    "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {
+    "C:\\Users\\Kálmán\\Documents\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Kálmán\\Documents\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
         "projectName": "PizzaBackend",
-        "projectPath": "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
-        "packagesPath": "C:\\Users\\sandorsm\\.nuget\\packages\\",
-        "outputPath": "D:\\Goon\\csakfrontendveglegesjo\\PizzaBackend\\obj\\",
+        "projectPath": "C:\\Users\\Kálmán\\Documents\\csakfrontendveglegesjo\\PizzaBackend\\PizzaBackend.csproj",
+        "packagesPath": "C:\\Users\\Kálmán\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kálmán\\Documents\\csakfrontendveglegesjo\\PizzaBackend\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sandorsm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Kálmán\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -42,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -125,7 +119,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

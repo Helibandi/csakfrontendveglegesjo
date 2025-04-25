@@ -249,7 +249,7 @@ const OrderDetails = () => {
             <div className="order-totals">
               <div className="total-row">
                 <span>Subtotal</span>
-                <span>${subtotal.toFixed(0)}</span>
+                <span>{subtotal} Ft</span>
               </div>
               <div className="total-row">
                 <span>Delivery Fee</span>
@@ -257,7 +257,7 @@ const OrderDetails = () => {
               </div>
               <div className="total-row grand-total">
                 <span>Total</span>
-                <span>${total.toFixed(0)}</span>
+                <span>{total} Ft</span>
               </div>
             </div>
           </div>
@@ -286,10 +286,10 @@ const OrderDetails = () => {
                   <p className="item-description">{item.product.description}</p>
                   <div className="item-meta">
                     <span className="item-price">
-                      ${item.price.toFixed(0)} × {item.quantity}
+                      {item.price} Ft × {item.quantity}
                     </span>
                     <span className="item-total">
-                      ${item.totalPrice.toFixed(0)}
+                      {item.totalPrice} Ft
                     </span>
                   </div>
                 </div>

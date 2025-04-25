@@ -30,7 +30,7 @@ const CartDisplay = () => {
             />
             <div className="cart-item-details">
               <h3>{item.name}</h3>
-              <p>{item.price} each</p>
+              <p>{item.price} Ft each</p>
               
               <div className="quantity-controls">
                 <button 
@@ -49,7 +49,7 @@ const CartDisplay = () => {
               </div>
               
               <p className="item-total">
-                Total: {(item.price * item.quantity)}
+                Total: {(item.price * item.quantity)} Ft
               </p>
               
               <button 
@@ -64,7 +64,7 @@ const CartDisplay = () => {
       </div>
       
       <div className="cart-summary">
-        <h3>Order Total: {totalPrice}</h3>
+        <h3>Order Total: {totalPrice} Ft</h3>
         <button 
           onClick={clearCart}
           className="clear-cart-button"

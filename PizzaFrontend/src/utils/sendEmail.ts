@@ -64,7 +64,7 @@ export const sendOrderConfirmation = (
     order_id: orderId,
     orders: ordersText,
     image_url: sampleImageUrl,
-    to_name: userName || 'Valued Customer',
+    to_name: userName,
     units: formattedItems.reduce((sum, item) => sum + item.quantity, 0),
     price: formattedItems.length > 0 ? formattedItems[0].price : 0,
     cost: totalAmount,

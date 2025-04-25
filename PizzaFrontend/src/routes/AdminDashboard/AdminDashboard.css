@@ -7,6 +7,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  /* Make the price column wider */
+  table th:nth-child(5), 
+  table td:nth-child(5) {
+    min-width: 120px; /* Makes the price column wider */
+    white-space: nowrap; /* Prevents the price from breaking into multiple lines */
+  }
+
   .admin-header {
     display: flex;
     justify-content: space-between;

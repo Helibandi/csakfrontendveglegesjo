@@ -73,7 +73,7 @@ namespace PizzaBackend.Controllers
                 {
                     Token = token,
                     RefreshToken = refreshToken,
-                    TokenExpiration = DateTime.Now.AddSeconds(_config.GetValue<int>("JWT:AccesTokenExpirationSeconds"))
+                    TokenExpiration = DateTime.Now.AddSeconds(_config.GetValue<int>("JWT:AccesTokenExpirationMinutes")),
                 });
         }
 

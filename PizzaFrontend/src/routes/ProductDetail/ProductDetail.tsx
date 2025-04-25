@@ -97,7 +97,7 @@ const ProductDetail = () => {
 
           <div className="product-detail-price-container">
             <span className="product-detail-price">
-              {product.price.toFixed(0)}
+              {product.price} Ft
             </span>
 
             <div className="product-detail-quantity">

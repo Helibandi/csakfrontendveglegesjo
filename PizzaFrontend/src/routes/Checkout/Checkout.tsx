@@ -257,7 +257,7 @@ const Checkout = () => {
             onClick={handleSubmit}
             className="place-order-button"
           >
-            Place Order - {totalPrice}
+            Place Order - {totalPrice} Ft
           </button>
         </form>
 
@@ -276,11 +276,11 @@ const Checkout = () => {
                   <div>
                     <h4>{item.name}</h4>
                     <p>
-                      {item.price} × {item.quantity}
+                      {item.price} × {item.quantity} Ft
                     </p>
                   </div>
                 </div>
-                <p className="item-total">{item.price * item.quantity}</p>
+                <p className="item-total">{item.price * item.quantity} Ft</p>
               </div>
             ))}
           </div>
@@ -288,7 +288,7 @@ const Checkout = () => {
           <div className="order-totals">
             <div className="total-row">
               <span>Subtotal</span>
-              <span>{totalPrice}</span>
+              <span>{totalPrice} Ft</span>
             </div>
             <div className="total-row">
               <span>Shipping</span>
@@ -296,7 +296,7 @@ const Checkout = () => {
             </div>
             <div className="total-row grand-total">
               <span>Total</span>
-              <span>{totalPrice}</span>
+              <span>{totalPrice} Ft</span>
             </div>
           </div>
         </div>

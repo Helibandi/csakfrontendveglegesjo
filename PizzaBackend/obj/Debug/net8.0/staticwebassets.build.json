@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "IdMSmTna0QHHBIBpzu74bgqUI+tlFgHB7OC0wi6B36k=",
+  "Hash": "iGFQWdDE+VJSfZua782tlk8pof4Gfseja5a9zC2+PsI=",
   "Source": "PizzaBackend",
   "BasePath": "_content/PizzaBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
